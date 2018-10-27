@@ -1,0 +1,50 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+import Dip
+import Dip_UI
+{% assign moduleNameFirstChar = module_info.name | slice: 0 %}{% assign correctedFirstChar = moduleNameFirstChar | downcase %}{% assign correctedModuleName = module_info.name | replace_first: moduleNameFirstChar, correctedFirstChar %}
+extension {{ module_info.name }}ViewController: StoryboardInstantiatable {
+    func didInstantiateFromStoryboard(_ container: DependencyContainer, tag: DependencyContainer.Tag?) throws {
+        try {{ correctedModuleName }}Assembly.resolveDependencies(of: self, tag: tag)
+    }
+}
+
+let {{ correctedModuleName }}Assembly = DependencyContainer { container in
+    
+    container.register(.shared, tag: String(describing: {{ module_info.name }}ViewController.self)) { {{ module_info.name }}ViewController() }
+        .implements(UIViewController.self,
+                    {{ module_info.name }}ViewInput.self)
+        .resolvingProperties { container, view in
+            view.output = try! container.resolve()
+            view.moduleInput = view.output as! {{ module_info.name }}ModuleInput
+    }
+    
+    container.register(.shared) { {{ module_info.name }}Presenter() as {{ module_info.name }}ModuleInput }
+        .implements({{ module_info.name }}InteractorOutput.self,
+                    {{ module_info.name }}ViewOutput.self)
+        .resolvingProperties { container, item in
+            let presenter = item as! {{ module_info.name }}Presenter 	 	
+            presenter.view = try! container.resolve(tag: String(describing: {{ module_info.name }}ViewController.self))
+            presenter.interactor = try! container.resolve()
+            presenter.router = try! container.resolve()
+    }
+    
+    container.register(.shared) { {{ module_info.name }}Interactor() as {{ module_info.name }}InteractorInput  }
+        .resolvingProperties { container, item in
+	        let interactor = item as! {{ module_info.name }}Interactor
+            interactor.output = try! container.resolve()
+    }
+    
+    container.register(.shared) { {{ module_info.name }}Router() as {{ module_info.name }}RouterInput }
+        .resolvingProperties { container, item in
+            let router = item as! {{ module_info.name }}Router
+            router.transitionHandler = try! container.resolve(tag: String(describing: {{ module_info.name }}ViewController.self))
+    }
+}
