@@ -7,5 +7,6 @@ target 'CalendarApp' do
 
   # Pods for CalendarApp
   pod 'Dip'
+  pod 'JTAppleCalendar'
 
 end

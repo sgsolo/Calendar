@@ -1,16 +1,20 @@
 PODS:
   - Dip (7.0.0)
+  - JTAppleCalendar (7.1.6)
 
 DEPENDENCIES:
   - Dip
+  - JTAppleCalendar
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Dip
+    - JTAppleCalendar
 
 SPEC CHECKSUMS:
   Dip: 996ce76ec9170ca3c260683d2815596dd2bf99c6
+  JTAppleCalendar: abb30678f42a4ef8a340a932b1dcb8c85a33dac2
 
-PODFILE CHECKSUM: 7bd7985d5c2b0927b3d91e726bb243c0b9debbc3
+PODFILE CHECKSUM: de0d58c62c72a4e306246ff0562d281b6ad7a97f
 
 COCOAPODS: 1.5.3
