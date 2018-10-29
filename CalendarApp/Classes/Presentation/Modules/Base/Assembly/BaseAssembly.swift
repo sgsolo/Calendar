@@ -21,8 +21,8 @@ let baseAssembly = DependencyContainer { container in
         .implements(UIViewController.self,
                     BaseViewInput.self)
         .resolvingProperties { container, view in
-            view.output = try! container.resolve()
-            view.moduleInput = view.output as! BaseModuleInput
+            view._output = try! container.resolve()
+            view._moduleInput = view._output as! BaseModuleInput
     }
     
     container.register(.shared) { BasePresenter() as BaseModuleInput }

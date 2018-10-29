@@ -13,4 +13,34 @@ class BasePresenter: NSObject, BaseModuleInput, BaseViewOutput, BaseInteractorOu
     weak var view: BaseViewInput!
     var interactor: BaseInteractorInput!
     var router: BaseRouterInput!
+    
+    //MARK: BaseViewOutput
+    
+    func viewDidLoad() {
+        
+    }
+    
+    func viewWillAppear() {
+        
+    }
+    
+    func viewDidAppear() {
+        
+    }
+    
+    func viewWillDisappear() {
+        
+    }
+    
+    func viewDidDisappear() {
+        
+    }
+    
+    func viewWillLayoutSubviews() {
+        
+    }
+    
+    func viewDidLayoutSubviews() {
+        
+    }
 }

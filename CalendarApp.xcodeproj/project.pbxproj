@@ -12,7 +12,12 @@
 		2A12394A9EEC58FDAF6F1879 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8796E317B785492A7663B80 /* BaseInteractor.swift */; };
 		387F689089CDD7524CFCF619 /* BaseRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA8D2DE35C4A92F4B4522A /* BaseRouterInput.swift */; };
 		39372CCE3B647A5D57DD5850 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69617BFC95EB19288CCA565 /* BaseRouter.swift */; };
+		3C85A95663B515F9B8EFCBE0 /* CalendarViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813143D0A5BD896148F1EA84 /* CalendarViewOutput.swift */; };
+		3E776078C5796C315DA9896F /* CalendarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033413AAD01B9BCC1E6FD774 /* CalendarPresenter.swift */; };
 		4383831468727171E1267EE8 /* BaseViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E57FD0414C5B53F0852C9 /* BaseViewInput.swift */; };
+		44E78CF33C99D6AC3D497BA4 /* CalendarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1319BBC1185E54AFA60261B7 /* CalendarInteractor.swift */; };
+		474D8DCEB736ED63CE861C94 /* CalendarRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8F83D2B2439F69F15E17B9 /* CalendarRouterInput.swift */; };
+		4B1BE5023A95809B644233DD /* CalendarModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7489D88750532B131D21F5C /* CalendarModuleInput.swift */; };
 		56165A5F00D7DB909A5C5996 /* BaseViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD318D6BDDE8F98B9415AA /* BaseViewOutput.swift */; };
 		698DB626B5F8F83F69116CC1 /* BaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730F8C83168676AFBB20A3C2 /* BaseAssembly.swift */; };
 		6B121BFB21847BC1008CFDCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B121BFA21847BC1008CFDCD /* AppDelegate.swift */; };
@@ -20,30 +25,47 @@
 		6B121C0221847BC3008CFDCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B121C0121847BC3008CFDCD /* Assets.xcassets */; };
 		6B121C0521847BC3008CFDCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B121C0321847BC3008CFDCD /* LaunchScreen.storyboard */; };
 		740EEDE3447CF80A9D90427E /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD511A7573370BB932A4ABB /* BasePresenter.swift */; };
+		756B088ECA026BCE749D1D0E /* CalendarViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879DCD94819E89216F27D68A /* CalendarViewInput.swift */; };
 		7972BB7AAC4E593A1A66ED24 /* BaseInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33F5E084B987789204E7911 /* BaseInteractorOutput.swift */; };
 		8938A087FD872F43417D21B3 /* BaseModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE48364FE1263E600D53C78 /* BaseModuleInput.swift */; };
+		8F2B16E9354E398F4A25EFDB /* CalendarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C99E1C1F3C966FA04F467 /* CalendarAssembly.swift */; };
+		8F312207882A1CAA6CC35736 /* CalendarInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7075BFF1FF41D725D5E8F60D /* CalendarInteractorOutput.swift */; };
+		98B6D7D6741B7A203783B5F9 /* CalendarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32544278E645EF7478065762 /* CalendarRouter.swift */; };
 		9D486B52C95B4207A9944A82 /* BaseInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F0D1147B6CB45B7697FA12 /* BaseInteractorInput.swift */; };
+		CBE6B4A46835648BCFF1060D /* CalendarInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B69761CAC14B228CD63F3D /* CalendarInteractorInput.swift */; };
+		ECCBC6600E68033C9251954B /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B85FD3F0E2A53248216D8D3 /* CalendarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0095357063731CFAEC33204C /* Pods_CalendarApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		033413AAD01B9BCC1E6FD774 /* CalendarPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarPresenter.swift; sourceTree = "<group>"; };
 		0E91BA0920D82AA25DAEBAA3 /* Pods-CalendarApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalendarApp/Pods-CalendarApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1319BBC1185E54AFA60261B7 /* CalendarInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarInteractor.swift; sourceTree = "<group>"; };
 		1FE48364FE1263E600D53C78 /* BaseModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseModuleInput.swift; sourceTree = "<group>"; };
 		246553F3E831DB67528BEC60 /* BaseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		32544278E645EF7478065762 /* CalendarRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarRouter.swift; sourceTree = "<group>"; };
 		3BCD318D6BDDE8F98B9415AA /* BaseViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseViewOutput.swift; sourceTree = "<group>"; };
 		4CD511A7573370BB932A4ABB /* BasePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		525C99E1C1F3C966FA04F467 /* CalendarAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarAssembly.swift; sourceTree = "<group>"; };
 		59F0D1147B6CB45B7697FA12 /* BaseInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseInteractorInput.swift; sourceTree = "<group>"; };
+		65B69761CAC14B228CD63F3D /* CalendarInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarInteractorInput.swift; sourceTree = "<group>"; };
 		6B121BF721847BC1008CFDCD /* CalendarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B121BFA21847BC1008CFDCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B121BFF21847BC1008CFDCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B121C0121847BC3008CFDCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B121C0421847BC3008CFDCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B121C0621847BC3008CFDCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7075BFF1FF41D725D5E8F60D /* CalendarInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarInteractorOutput.swift; sourceTree = "<group>"; };
 		730F8C83168676AFBB20A3C2 /* BaseAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseAssembly.swift; sourceTree = "<group>"; };
+		813143D0A5BD896148F1EA84 /* CalendarViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarViewOutput.swift; sourceTree = "<group>"; };
 		8665CF496EF7F12FF2056047 /* Pods-CalendarApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalendarApp/Pods-CalendarApp.release.xcconfig"; sourceTree = "<group>"; };
+		879DCD94819E89216F27D68A /* CalendarViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarViewInput.swift; sourceTree = "<group>"; };
 		8BAA8D2DE35C4A92F4B4522A /* BaseRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseRouterInput.swift; sourceTree = "<group>"; };
+		9B85FD3F0E2A53248216D8D3 /* CalendarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		A33F5E084B987789204E7911 /* BaseInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseInteractorOutput.swift; sourceTree = "<group>"; };
+		A7489D88750532B131D21F5C /* CalendarModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarModuleInput.swift; sourceTree = "<group>"; };
 		A8796E317B785492A7663B80 /* BaseInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
+		AD8F83D2B2439F69F15E17B9 /* CalendarRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarRouterInput.swift; sourceTree = "<group>"; };
 		B83E57FD0414C5B53F0852C9 /* BaseViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseViewInput.swift; sourceTree = "<group>"; };
 		C69617BFC95EB19288CCA565 /* BaseRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,10 +99,37 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		3F9094494BC36D3DA8194ECA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				65B69761CAC14B228CD63F3D /* CalendarInteractorInput.swift */,
+				7075BFF1FF41D725D5E8F60D /* CalendarInteractorOutput.swift */,
+				1319BBC1185E54AFA60261B7 /* CalendarInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		472A60C948E9BBD8B8F22327 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
 				730F8C83168676AFBB20A3C2 /* BaseAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		49272F06B8E2D20FAC2E714A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AD8F83D2B2439F69F15E17B9 /* CalendarRouterInput.swift */,
+				32544278E645EF7478065762 /* CalendarRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		54421C2AA4C25DE6B8551740 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				525C99E1C1F3C966FA04F467 /* CalendarAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -148,6 +197,18 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		8379AD2417FBBFAA7A729BFF /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				F5BDF97CDDB86107EC4F5757 /* View */,
+				B90C7284CC10FDC1FA798D61 /* Presenter */,
+				3F9094494BC36D3DA8194ECA /* Interactor */,
+				49272F06B8E2D20FAC2E714A /* Router */,
+				54421C2AA4C25DE6B8551740 /* Assembly */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		9CEF7354500CEE7B12104062 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +240,15 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		B90C7284CC10FDC1FA798D61 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A7489D88750532B131D21F5C /* CalendarModuleInput.swift */,
+				033413AAD01B9BCC1E6FD774 /* CalendarPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		C5859E9FEA5ACD8FF70704FC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				9CEF7354500CEE7B12104062 /* Base */,
+				8379AD2417FBBFAA7A729BFF /* Calendar */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -202,6 +273,16 @@
 				B83E57FD0414C5B53F0852C9 /* BaseViewInput.swift */,
 				3BCD318D6BDDE8F98B9415AA /* BaseViewOutput.swift */,
 				246553F3E831DB67528BEC60 /* BaseViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5BDF97CDDB86107EC4F5757 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				879DCD94819E89216F27D68A /* CalendarViewInput.swift */,
+				813143D0A5BD896148F1EA84 /* CalendarViewOutput.swift */,
+				9B85FD3F0E2A53248216D8D3 /* CalendarViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,6 +421,17 @@
 				387F689089CDD7524CFCF619 /* BaseRouterInput.swift in Sources */,
 				39372CCE3B647A5D57DD5850 /* BaseRouter.swift in Sources */,
 				698DB626B5F8F83F69116CC1 /* BaseAssembly.swift in Sources */,
+				756B088ECA026BCE749D1D0E /* CalendarViewInput.swift in Sources */,
+				3C85A95663B515F9B8EFCBE0 /* CalendarViewOutput.swift in Sources */,
+				ECCBC6600E68033C9251954B /* CalendarViewController.swift in Sources */,
+				4B1BE5023A95809B644233DD /* CalendarModuleInput.swift in Sources */,
+				3E776078C5796C315DA9896F /* CalendarPresenter.swift in Sources */,
+				CBE6B4A46835648BCFF1060D /* CalendarInteractorInput.swift in Sources */,
+				8F312207882A1CAA6CC35736 /* CalendarInteractorOutput.swift in Sources */,
+				44E78CF33C99D6AC3D497BA4 /* CalendarInteractor.swift in Sources */,
+				474D8DCEB736ED63CE861C94 /* CalendarRouterInput.swift in Sources */,
+				98B6D7D6741B7A203783B5F9 /* CalendarRouter.swift in Sources */,
+				8F2B16E9354E398F4A25EFDB /* CalendarAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

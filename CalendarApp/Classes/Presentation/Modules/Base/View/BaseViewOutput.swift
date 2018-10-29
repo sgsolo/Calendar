@@ -6,6 +6,18 @@
 //  Copyright © 2018 High Technologies Center. All rights reserved.
 //
 
-protocol BaseViewOutput: class {
+protocol LifeCycleModuleOutput: class {
+    
+    func viewDidLoad()
+    func viewWillAppear()
+    func viewDidAppear()
+    func viewWillDisappear()
+    func viewDidDisappear()
+    func viewWillLayoutSubviews()
+    func viewDidLayoutSubviews()
+    
+}
+
+protocol BaseViewOutput: class, LifeCycleModuleOutput {
 
 }
