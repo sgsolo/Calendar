@@ -10,43 +10,43 @@ import UIKit
 
 class BaseViewController: UIViewController, BaseViewInput {
 
-    var _output: BaseViewOutput!
-    var _moduleInput: BaseModuleInput!
+    var output: BaseViewOutput!
+    var moduleInput: BaseModuleInput!
 
     // MARK: Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        _output.viewDidLoad()
+        output.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        _output.viewWillAppear()
+        output.viewWillAppear()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        _output.viewDidAppear()
+        output.viewDidAppear()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        _output.viewWillDisappear()
+        output.viewWillDisappear()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        _output.viewDidDisappear()
+        output.viewDidDisappear()
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        _output.viewWillLayoutSubviews()
+        output.viewWillLayoutSubviews()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        _output.viewDidLayoutSubviews()
+        output.viewDidLayoutSubviews()
     }
 }

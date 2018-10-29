@@ -24,6 +24,7 @@
 		6B121C0021847BC1008CFDCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B121BFE21847BC1008CFDCD /* Main.storyboard */; };
 		6B121C0221847BC3008CFDCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B121C0121847BC3008CFDCD /* Assets.xcassets */; };
 		6B121C0521847BC3008CFDCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B121C0321847BC3008CFDCD /* LaunchScreen.storyboard */; };
+		6BECCF6B2187021B0062A2BE /* CommonAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BECCF6A2187021B0062A2BE /* CommonAssembly.swift */; };
 		740EEDE3447CF80A9D90427E /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD511A7573370BB932A4ABB /* BasePresenter.swift */; };
 		756B088ECA026BCE749D1D0E /* CalendarViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879DCD94819E89216F27D68A /* CalendarViewInput.swift */; };
 		7972BB7AAC4E593A1A66ED24 /* BaseInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33F5E084B987789204E7911 /* BaseInteractorOutput.swift */; };
@@ -55,6 +56,7 @@
 		6B121C0121847BC3008CFDCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B121C0421847BC3008CFDCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B121C0621847BC3008CFDCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BECCF6A2187021B0062A2BE /* CommonAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAssembly.swift; sourceTree = "<group>"; };
 		7075BFF1FF41D725D5E8F60D /* CalendarInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarInteractorOutput.swift; sourceTree = "<group>"; };
 		730F8C83168676AFBB20A3C2 /* BaseAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseAssembly.swift; sourceTree = "<group>"; };
 		813143D0A5BD896148F1EA84 /* CalendarViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarViewOutput.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				6B121BFA21847BC1008CFDCD /* AppDelegate.swift */,
+				6BECCF6A2187021B0062A2BE /* CommonAssembly.swift */,
 				67E752A97FB71DB03A852F0C /* Presentation */,
 			);
 			path = Classes;
@@ -425,6 +428,7 @@
 				3C85A95663B515F9B8EFCBE0 /* CalendarViewOutput.swift in Sources */,
 				ECCBC6600E68033C9251954B /* CalendarViewController.swift in Sources */,
 				4B1BE5023A95809B644233DD /* CalendarModuleInput.swift in Sources */,
+				6BECCF6B2187021B0062A2BE /* CommonAssembly.swift in Sources */,
 				3E776078C5796C315DA9896F /* CalendarPresenter.swift in Sources */,
 				CBE6B4A46835648BCFF1060D /* CalendarInteractorInput.swift in Sources */,
 				8F312207882A1CAA6CC35736 /* CalendarInteractorOutput.swift in Sources */,
