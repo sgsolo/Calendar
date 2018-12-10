@@ -43,8 +43,12 @@ class CalendarViewController: UIViewController, CalendarViewInput {
         calendarView.backgroundColor = .white
         calendarView.register(UINib(nibName: String(describing: CalendarCell.self), bundle: .main), forCellWithReuseIdentifier: String(describing: CalendarCell.self))
         
-        calendarView.scrollToDate(Date(), triggerScrollToDateDelegate: false, animateScroll: false, completionHandler: { [weak self] in
-            self?.calendarView.visibleDates { self?.setupViewsOfCalendar(from: $0) }
+        calendarView.scrollToDate(Date(),
+                                  triggerScrollToDateDelegate: false,
+                                  animateScroll: false,
+                                  preferredScrollPosition: .centeredHorizontally,
+                                  completionHandler: { [weak self] in
+                                    self?.calendarView.visibleDates { self?.setupViewsOfCalendar(from: $0) }
         })
     }
     

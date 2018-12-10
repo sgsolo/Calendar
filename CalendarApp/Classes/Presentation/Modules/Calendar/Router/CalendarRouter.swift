@@ -14,10 +14,12 @@ class CalendarRouter: NSObject, CalendarRouterInput {
 }
 
 extension CalendarRouter {
-//    let storyboard = try! profilePreviewAssembly.resolve() as UIStoryboard
-//    guard let destinationViewController = storyboard.instantiateViewController(withIdentifier: "ProfilePreviewViewController") as? ProfilePreviewViewController else { return }
     
     func openEditDateModule() {
+        let storyboard = try! dayAssembly.resolve() as UIStoryboard
+        guard let destinationViewController = storyboard.instantiateViewController(withIdentifier: "DayViewController") as? DayViewController else { return }
+        
+        self.transitionHandler.navigationController?.pushViewController(destinationViewController, animated: true)
         
     }
 }
