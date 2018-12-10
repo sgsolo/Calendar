@@ -22,7 +22,7 @@ let calendarAssembly = DependencyContainer { container in
                     CalendarViewInput.self)
         .resolvingProperties { container, view in
             view.output = try! container.resolve()
-            view.moduleInput = view.output as! CalendarModuleInput
+            view.moduleInput = view.output as? CalendarModuleInput
     }
     
     container.register(.shared) { CalendarPresenter() as CalendarModuleInput }

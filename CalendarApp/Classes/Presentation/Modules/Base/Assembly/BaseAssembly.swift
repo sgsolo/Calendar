@@ -22,7 +22,7 @@ let baseAssembly = DependencyContainer { container in
                     BaseViewInput.self)
         .resolvingProperties { container, view in
             view.output = try! container.resolve()
-            view.moduleInput = view.output as! BaseModuleInput
+            view.moduleInput = view.output as? BaseModuleInput
     }
     
     container.register(.shared) { BasePresenter() as BaseModuleInput }

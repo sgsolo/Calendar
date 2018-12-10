@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CalendarCell" customModule="CalendarApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="164"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukw-gp-hY6">
+                    <rect key="frame" x="81.5" y="66" width="32" height="32"/>
+                    <color key="backgroundColor" red="0.0" green="0.56862745098039214" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="74y-Ew-Rkx"/>
+                        <constraint firstAttribute="width" secondItem="ukw-gp-hY6" secondAttribute="height" multiplier="1:1" id="GOb-om-3Bz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBg-wa-8sV">
+                    <rect key="frame" x="81.5" y="66" width="32" height="32"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuA-bf-2w5">
+                    <rect key="frame" x="92.5" y="73" width="10" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ukw-gp-hY6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0iE-Tg-BYp"/>
+                <constraint firstItem="ukw-gp-hY6" firstAttribute="trailing" secondItem="fBg-wa-8sV" secondAttribute="trailing" id="8Hh-1o-LZk"/>
+                <constraint firstItem="YuA-bf-2w5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DED-De-7hq"/>
+                <constraint firstItem="ukw-gp-hY6" firstAttribute="leading" secondItem="fBg-wa-8sV" secondAttribute="leading" id="FAL-11-Xvg"/>
+                <constraint firstItem="ukw-gp-hY6" firstAttribute="top" secondItem="fBg-wa-8sV" secondAttribute="top" id="J88-QB-iIZ"/>
+                <constraint firstItem="YuA-bf-2w5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="MU2-s2-8rr"/>
+                <constraint firstItem="ukw-gp-hY6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="SCT-2Y-gdL"/>
+                <constraint firstItem="ukw-gp-hY6" firstAttribute="bottom" secondItem="fBg-wa-8sV" secondAttribute="bottom" id="rJB-d3-X5M"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="dayLabel" destination="YuA-bf-2w5" id="uDC-yq-r23"/>
+                <outlet property="meetingDayMarkView" destination="fBg-wa-8sV" id="GCq-5E-zzS"/>
+                <outlet property="selectedView" destination="ukw-gp-hY6" id="9SH-2X-PDq"/>
+            </connections>
+            <point key="canvasLocation" x="-177.5" y="-177"/>
+        </view>
+    </objects>
+</document>
