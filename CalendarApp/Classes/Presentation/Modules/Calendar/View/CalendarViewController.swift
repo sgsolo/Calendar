@@ -31,7 +31,6 @@ class CalendarViewController: UIViewController, CalendarViewInput {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        output.testMethod()
         self.configureCalendar()
     }
     
@@ -95,7 +94,7 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
     
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         calendar.deselect(dates: [date])
-//        guard let cell = cell as? CalendarCell  else { return }
+        output.didCalendarTap(date: date)
     }
     
 }

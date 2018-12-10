@@ -8,4 +8,5 @@
 
 protocol CalendarRouterInput: class {
 
+    func openEditDateModule()
 }

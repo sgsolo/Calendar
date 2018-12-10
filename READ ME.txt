@@ -1,0 +1,1 @@
+Steps to Success:   1)sudo gem install builder 2)bundler install 3)bundler exec generamba gen (Module Name) (Pattern NAME)

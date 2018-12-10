@@ -6,8 +6,10 @@
 //  Copyright © 2018 High Technologies Center. All rights reserved.
 //
 
+import Foundation
+
 protocol CalendarViewOutput: class {
 
-    func testMethod()
+    func didCalendarTap(date: Date)
     
 }
