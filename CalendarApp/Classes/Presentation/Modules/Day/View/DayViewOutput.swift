@@ -6,6 +6,6 @@
 //  Copyright © 2018 High Technologies Center. All rights reserved.
 //
 
-protocol DayViewOutput: class {
+protocol DayViewOutput: class, ViewLifecycleObserver {
 
 }

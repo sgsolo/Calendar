@@ -8,17 +8,17 @@
 
 import UIKit
 
-class DayViewController: UIViewController, DayViewInput {
+class DayViewController: BaseViewController, DayViewInput {
 
     var output: DayViewOutput!
-    var moduleInput: DayModuleInput!
+    //var moduleInput: DayModuleInput!
 
     // MARK: Lifecycle
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        configureNavigationBar()
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        configureNavigationBar()
+//    }
     
     func configureNavigationBar() {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(didTapNavigationItem))

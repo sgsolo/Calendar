@@ -8,10 +8,10 @@
 
 import JTAppleCalendar
 
-class CalendarViewController: UIViewController, CalendarViewInput {
+class CalendarViewController: BaseViewController, CalendarViewInput {
 
     var output: CalendarViewOutput!
-    var moduleInput: CalendarModuleInput!
+    //var moduleInput: CalendarModuleInput!
     var calendarView: JTAppleCalendarView
     
     @IBOutlet weak var daysOfWeekContainerView: UIView!
@@ -29,10 +29,10 @@ class CalendarViewController: UIViewController, CalendarViewInput {
         super.init(coder: aDecoder)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.configureCalendar()
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        self.configureCalendar()
+//    }
     
     func configureCalendar() {
         self.view.addSubview(calendarView)

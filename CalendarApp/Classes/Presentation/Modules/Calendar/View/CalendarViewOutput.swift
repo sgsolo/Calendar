@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol CalendarViewOutput: class {
+protocol CalendarViewOutput: class, ViewLifecycleObserver {
 
     func didCalendarTap(date: Date)
     
