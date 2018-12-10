@@ -42,7 +42,7 @@ class CalendarViewController: UIViewController, CalendarViewInput {
         calendarView.scrollDirection = .horizontal
         calendarView.isPagingEnabled = true
         calendarView.backgroundColor = .white
-        calendarView.register(UINib(nibName: String(describing: CalendarCell.self), bundle: .main), forCellWithReuseIdentifier: "CalendarCell")
+        calendarView.register(UINib(nibName: String(describing: CalendarCell.self), bundle: .main), forCellWithReuseIdentifier: String(describing: CalendarCell.self))
         
         calendarView.scrollToDate(Date(), triggerScrollToDateDelegate: false, animateScroll: false, completionHandler: { [weak self] in
             self?.calendarView.visibleDates { self?.setupViewsOfCalendar(from: $0) }
@@ -84,7 +84,7 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
     }
     
     func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
-        let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "CalendarCell", for: indexPath) as! CalendarCell
+        let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: String(describing: CalendarCell.self), for: indexPath) as! CalendarCell
         cell.dayLabel.text = cellState.text
         return cell
     }
