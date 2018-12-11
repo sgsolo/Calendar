@@ -8,9 +8,16 @@
 
 import Foundation
 
-class DayPresenter: NSObject, DayModuleInput, DayViewOutput, DayInteractorOutput {
+class DayPresenter: NSObject, DayModuleInput, DayInteractorOutput {
 
     weak var view: DayViewInput!
     var interactor: DayInteractorInput!
     var router: DayRouterInput!
+}
+
+extension DayPresenter: DayViewOutput {
+    
+    func didTapNavigationItem() {
+        router.popViewController()
+    }
 }

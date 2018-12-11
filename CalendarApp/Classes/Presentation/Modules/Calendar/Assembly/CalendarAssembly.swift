@@ -22,6 +22,9 @@ let calendarAssembly = DependencyContainer { container in
                     CalendarViewInput.self)
         .resolvingProperties { container, view in
             view.output = try! container.resolve()
+            let adapter = CalendarCollectionViewAdapter()
+            adapter.output = view
+            view.adapter = adapter
             view.moduleInput = view.output as? CalendarModuleInput
     }
     

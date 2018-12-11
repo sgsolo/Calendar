@@ -8,5 +8,4 @@
 
 protocol CalendarViewInput: class {
 
-    func configureCalendar()
 }

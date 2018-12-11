@@ -11,4 +11,8 @@ import UIKit
 class DayRouter: NSObject, DayRouterInput {
 
 	weak var transitionHandler: UIViewController!
+    
+    func popViewController() {
+        transitionHandler.navigationController?.popViewController(animated: true)
+    }
 }

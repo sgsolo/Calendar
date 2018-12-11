@@ -6,6 +6,7 @@
 //  Copyright © 2018 High Technologies Center. All rights reserved.
 //
 
-protocol DayViewOutput: class, ViewLifecycleObserver {
+protocol DayViewOutput: ViewLifecycleObserver {
 
+    func didTapNavigationItem()
 }

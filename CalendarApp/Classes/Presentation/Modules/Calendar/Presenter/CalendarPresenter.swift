@@ -17,10 +17,6 @@ class CalendarPresenter: NSObject, CalendarModuleInput, CalendarViewOutput, Cale
 
 extension CalendarPresenter  {
     
-    func viewDidLoad() {
-        view.configureCalendar()
-    }
-    
     func didCalendarTap(date: Date) {
         router.openEditDateModule()
     }

@@ -30,6 +30,29 @@
 		6BB792C021BEAA03008C92D8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792BD21BEAA03008C92D8 /* BaseViewController.swift */; };
 		6BB792C421BEACEB008C92D8 /* MirrorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792C321BEACEB008C92D8 /* MirrorExtensions.swift */; };
 		6BB792C721BF88D5008C92D8 /* CalendarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792C621BF88D5008C92D8 /* CalendarBuilder.swift */; };
+		6BB792D221BF90EC008C92D8 /* BaseCollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792CC21BF90EB008C92D8 /* BaseCollectionViewAdapter.swift */; };
+		6BB792D321BF90EC008C92D8 /* RegistrableSupplementaryViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792CD21BF90EB008C92D8 /* RegistrableSupplementaryViewComponent.swift */; };
+		6BB792D421BF90EC008C92D8 /* CollectionViewItemsSizeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792CE21BF90EB008C92D8 /* CollectionViewItemsSizeProvider.swift */; };
+		6BB792EA21BF913F008C92D8 /* CellWithCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792D621BF913F008C92D8 /* CellWithCollection.swift */; };
+		6BB792EB21BF913F008C92D8 /* LoadableInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792D721BF913F008C92D8 /* LoadableInput.swift */; };
+		6BB792EC21BF913F008C92D8 /* LoadableViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792D821BF913F008C92D8 /* LoadableViewInput.swift */; };
+		6BB792ED21BF913F008C92D8 /* URLPathConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792D921BF913F008C92D8 /* URLPathConvertable.swift */; };
+		6BB792EE21BF913F008C92D8 /* RegistrableComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792DA21BF913F008C92D8 /* RegistrableComponent.swift */; };
+		6BB792F421BF913F008C92D8 /* RouterTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792E121BF913F008C92D8 /* RouterTrait.swift */; };
+		6BB792F521BF913F008C92D8 /* ConfigurableComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792E221BF913F008C92D8 /* ConfigurableComponent.swift */; };
+		6BB792F621BF913F008C92D8 /* ShowErrorRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792E321BF913F008C92D8 /* ShowErrorRouterInput.swift */; };
+		6BB792F721BF913F008C92D8 /* ShowAlertRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792E421BF913F008C92D8 /* ShowAlertRouterInput.swift */; };
+		6BB792F921BF913F008C92D8 /* URLConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792E621BF913F008C92D8 /* URLConvertable.swift */; };
+		6BB792FB21BF913F008C92D8 /* ReusableComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792E821BF913F008C92D8 /* ReusableComponent.swift */; };
+		6BB7930721BF92BC008C92D8 /* APIMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792FE21BF92BC008C92D8 /* APIMethods.swift */; };
+		6BB7930821BF92BC008C92D8 /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792FF21BF92BC008C92D8 /* NetworkServiceError.swift */; };
+		6BB7930A21BF92BC008C92D8 /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB7930121BF92BC008C92D8 /* DayOfWeek.swift */; };
+		6BB7930B21BF92BC008C92D8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB7930221BF92BC008C92D8 /* Result.swift */; };
+		6BB7930C21BF92BC008C92D8 /* ImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB7930321BF92BC008C92D8 /* ImageSource.swift */; };
+		6BB7930E21BF92BC008C92D8 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB7930521BF92BC008C92D8 /* Month.swift */; };
+		6BB7930F21BF92BC008C92D8 /* RegistrableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB7930621BF92BC008C92D8 /* RegistrableSource.swift */; };
+		6BB7931221BF9606008C92D8 /* CalendarCollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB7931121BF9606008C92D8 /* CalendarCollectionViewAdapter.swift */; };
+		6BB7931621BFE130008C92D8 /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB7931521BFE130008C92D8 /* StringHelper.swift */; };
 		6BECCF6B2187021B0062A2BE /* CommonAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BECCF6A2187021B0062A2BE /* CommonAssembly.swift */; };
 		756B088ECA026BCE749D1D0E /* CalendarViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879DCD94819E89216F27D68A /* CalendarViewInput.swift */; };
 		761EA98F8B054737F41E6B38 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFC38F632F03E88227D7CD /* DayViewController.swift */; };
@@ -68,6 +91,29 @@
 		6BB792BD21BEAA03008C92D8 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		6BB792C321BEACEB008C92D8 /* MirrorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorExtensions.swift; sourceTree = "<group>"; };
 		6BB792C621BF88D5008C92D8 /* CalendarBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarBuilder.swift; sourceTree = "<group>"; };
+		6BB792CC21BF90EB008C92D8 /* BaseCollectionViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewAdapter.swift; sourceTree = "<group>"; };
+		6BB792CD21BF90EB008C92D8 /* RegistrableSupplementaryViewComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrableSupplementaryViewComponent.swift; sourceTree = "<group>"; };
+		6BB792CE21BF90EB008C92D8 /* CollectionViewItemsSizeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewItemsSizeProvider.swift; sourceTree = "<group>"; };
+		6BB792D621BF913F008C92D8 /* CellWithCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellWithCollection.swift; sourceTree = "<group>"; };
+		6BB792D721BF913F008C92D8 /* LoadableInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadableInput.swift; sourceTree = "<group>"; };
+		6BB792D821BF913F008C92D8 /* LoadableViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadableViewInput.swift; sourceTree = "<group>"; };
+		6BB792D921BF913F008C92D8 /* URLPathConvertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLPathConvertable.swift; sourceTree = "<group>"; };
+		6BB792DA21BF913F008C92D8 /* RegistrableComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrableComponent.swift; sourceTree = "<group>"; };
+		6BB792E121BF913F008C92D8 /* RouterTrait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterTrait.swift; sourceTree = "<group>"; };
+		6BB792E221BF913F008C92D8 /* ConfigurableComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableComponent.swift; sourceTree = "<group>"; };
+		6BB792E321BF913F008C92D8 /* ShowErrorRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowErrorRouterInput.swift; sourceTree = "<group>"; };
+		6BB792E421BF913F008C92D8 /* ShowAlertRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowAlertRouterInput.swift; sourceTree = "<group>"; };
+		6BB792E621BF913F008C92D8 /* URLConvertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLConvertable.swift; sourceTree = "<group>"; };
+		6BB792E821BF913F008C92D8 /* ReusableComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableComponent.swift; sourceTree = "<group>"; };
+		6BB792FE21BF92BC008C92D8 /* APIMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMethods.swift; sourceTree = "<group>"; };
+		6BB792FF21BF92BC008C92D8 /* NetworkServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
+		6BB7930121BF92BC008C92D8 /* DayOfWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
+		6BB7930221BF92BC008C92D8 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		6BB7930321BF92BC008C92D8 /* ImageSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSource.swift; sourceTree = "<group>"; };
+		6BB7930521BF92BC008C92D8 /* Month.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
+		6BB7930621BF92BC008C92D8 /* RegistrableSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrableSource.swift; sourceTree = "<group>"; };
+		6BB7931121BF9606008C92D8 /* CalendarCollectionViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewAdapter.swift; sourceTree = "<group>"; };
+		6BB7931521BFE130008C92D8 /* StringHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelper.swift; sourceTree = "<group>"; };
 		6BECCF6A2187021B0062A2BE /* CommonAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAssembly.swift; sourceTree = "<group>"; };
 		7075BFF1FF41D725D5E8F60D /* CalendarInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarInteractorOutput.swift; sourceTree = "<group>"; };
 		7195210A7208A6E6FF3420A9 /* DayPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DayPresenter.swift; sourceTree = "<group>"; };
@@ -249,6 +295,11 @@
 		6BB792BA21BEA94D008C92D8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6BB7931421BFE0F6008C92D8 /* Helpers */,
+				6BB7931321BFBEF1008C92D8 /* CollectionViewCell */,
+				6BB792FD21BF92BC008C92D8 /* Enums and types */,
+				6BB792D521BF913F008C92D8 /* Protocols */,
+				6BB792CB21BF90EB008C92D8 /* CollectionViewAdapters */,
 				6BB792C521BF8898008C92D8 /* Builders */,
 				6BB792C221BEAA9F008C92D8 /* Extentions */,
 				6BB792C121BEAA7E008C92D8 /* ViewController */,
@@ -280,6 +331,79 @@
 				6BB792C621BF88D5008C92D8 /* CalendarBuilder.swift */,
 			);
 			path = Builders;
+			sourceTree = "<group>";
+		};
+		6BB792CB21BF90EB008C92D8 /* CollectionViewAdapters */ = {
+			isa = PBXGroup;
+			children = (
+				6BB792CC21BF90EB008C92D8 /* BaseCollectionViewAdapter.swift */,
+				6BB792CD21BF90EB008C92D8 /* RegistrableSupplementaryViewComponent.swift */,
+				6BB792CE21BF90EB008C92D8 /* CollectionViewItemsSizeProvider.swift */,
+			);
+			path = CollectionViewAdapters;
+			sourceTree = "<group>";
+		};
+		6BB792D521BF913F008C92D8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6BB792DB21BF913F008C92D8 /* Traits */,
+				6BB792D621BF913F008C92D8 /* CellWithCollection.swift */,
+				6BB792D721BF913F008C92D8 /* LoadableInput.swift */,
+				6BB792D821BF913F008C92D8 /* LoadableViewInput.swift */,
+				6BB792D921BF913F008C92D8 /* URLPathConvertable.swift */,
+				6BB792DA21BF913F008C92D8 /* RegistrableComponent.swift */,
+				6BB792E221BF913F008C92D8 /* ConfigurableComponent.swift */,
+				6BB792E321BF913F008C92D8 /* ShowErrorRouterInput.swift */,
+				6BB792E421BF913F008C92D8 /* ShowAlertRouterInput.swift */,
+				6BB792E621BF913F008C92D8 /* URLConvertable.swift */,
+				6BB792E821BF913F008C92D8 /* ReusableComponent.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6BB792DB21BF913F008C92D8 /* Traits */ = {
+			isa = PBXGroup;
+			children = (
+				6BB792E121BF913F008C92D8 /* RouterTrait.swift */,
+			);
+			path = Traits;
+			sourceTree = "<group>";
+		};
+		6BB792FD21BF92BC008C92D8 /* Enums and types */ = {
+			isa = PBXGroup;
+			children = (
+				6BB792FE21BF92BC008C92D8 /* APIMethods.swift */,
+				6BB792FF21BF92BC008C92D8 /* NetworkServiceError.swift */,
+				6BB7930121BF92BC008C92D8 /* DayOfWeek.swift */,
+				6BB7930221BF92BC008C92D8 /* Result.swift */,
+				6BB7930321BF92BC008C92D8 /* ImageSource.swift */,
+				6BB7930521BF92BC008C92D8 /* Month.swift */,
+				6BB7930621BF92BC008C92D8 /* RegistrableSource.swift */,
+			);
+			path = "Enums and types";
+			sourceTree = "<group>";
+		};
+		6BB7931021BF95CE008C92D8 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				6BB7931121BF9606008C92D8 /* CalendarCollectionViewAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		6BB7931321BFBEF1008C92D8 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		6BB7931421BFE0F6008C92D8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6BB7931521BFE130008C92D8 /* StringHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		7710EF985A226D850CC17E30 /* View */ = {
@@ -354,6 +478,7 @@
 				879DCD94819E89216F27D68A /* CalendarViewInput.swift */,
 				813143D0A5BD896148F1EA84 /* CalendarViewOutput.swift */,
 				9B85FD3F0E2A53248216D8D3 /* CalendarViewController.swift */,
+				6BB7931021BF95CE008C92D8 /* Adapters */,
 				6BA1DF8121BE676300E1D56C /* Cells */,
 			);
 			path = View;
@@ -482,16 +607,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BB7930B21BF92BC008C92D8 /* Result.swift in Sources */,
 				6B121BFB21847BC1008CFDCD /* AppDelegate.swift in Sources */,
+				6BB7930721BF92BC008C92D8 /* APIMethods.swift in Sources */,
 				6BA1DF8521BE676300E1D56C /* CalendarCell.swift in Sources */,
 				756B088ECA026BCE749D1D0E /* CalendarViewInput.swift in Sources */,
 				3C85A95663B515F9B8EFCBE0 /* CalendarViewOutput.swift in Sources */,
 				ECCBC6600E68033C9251954B /* CalendarViewController.swift in Sources */,
+				6BB7931621BFE130008C92D8 /* StringHelper.swift in Sources */,
 				4B1BE5023A95809B644233DD /* CalendarModuleInput.swift in Sources */,
 				6BECCF6B2187021B0062A2BE /* CommonAssembly.swift in Sources */,
+				6BB792D421BF90EC008C92D8 /* CollectionViewItemsSizeProvider.swift in Sources */,
+				6BB792F421BF913F008C92D8 /* RouterTrait.swift in Sources */,
 				3E776078C5796C315DA9896F /* CalendarPresenter.swift in Sources */,
 				CBE6B4A46835648BCFF1060D /* CalendarInteractorInput.swift in Sources */,
 				6BB792C721BF88D5008C92D8 /* CalendarBuilder.swift in Sources */,
+				6BB792F621BF913F008C92D8 /* ShowErrorRouterInput.swift in Sources */,
+				6BB7930A21BF92BC008C92D8 /* DayOfWeek.swift in Sources */,
 				8F312207882A1CAA6CC35736 /* CalendarInteractorOutput.swift in Sources */,
 				44E78CF33C99D6AC3D497BA4 /* CalendarInteractor.swift in Sources */,
 				474D8DCEB736ED63CE861C94 /* CalendarRouterInput.swift in Sources */,
@@ -499,16 +631,32 @@
 				8F2B16E9354E398F4A25EFDB /* CalendarAssembly.swift in Sources */,
 				8D8E2FB4E27EA76E3AA9E3B5 /* DayViewInput.swift in Sources */,
 				6BB792C021BEAA03008C92D8 /* BaseViewController.swift in Sources */,
+				6BB792FB21BF913F008C92D8 /* ReusableComponent.swift in Sources */,
 				48223F130F6E24706E2D2B8C /* DayViewOutput.swift in Sources */,
+				6BB792F721BF913F008C92D8 /* ShowAlertRouterInput.swift in Sources */,
+				6BB792ED21BF913F008C92D8 /* URLPathConvertable.swift in Sources */,
 				761EA98F8B054737F41E6B38 /* DayViewController.swift in Sources */,
 				DB2A074E67600C9C4407CBBA /* DayModuleInput.swift in Sources */,
+				6BB792EC21BF913F008C92D8 /* LoadableViewInput.swift in Sources */,
+				6BB7930821BF92BC008C92D8 /* NetworkServiceError.swift in Sources */,
+				6BB792EA21BF913F008C92D8 /* CellWithCollection.swift in Sources */,
+				6BB7931221BF9606008C92D8 /* CalendarCollectionViewAdapter.swift in Sources */,
+				6BB792D221BF90EC008C92D8 /* BaseCollectionViewAdapter.swift in Sources */,
 				6BB792BF21BEAA03008C92D8 /* ViewLifecycleObserver.swift in Sources */,
+				6BB792F921BF913F008C92D8 /* URLConvertable.swift in Sources */,
+				6BB7930F21BF92BC008C92D8 /* RegistrableSource.swift in Sources */,
 				69BF0281F8CD124CFF3BA826 /* DayPresenter.swift in Sources */,
+				6BB792F521BF913F008C92D8 /* ConfigurableComponent.swift in Sources */,
+				6BB7930C21BF92BC008C92D8 /* ImageSource.swift in Sources */,
 				4A13AEBC554965CD38532107 /* DayInteractorInput.swift in Sources */,
+				6BB7930E21BF92BC008C92D8 /* Month.swift in Sources */,
+				6BB792EB21BF913F008C92D8 /* LoadableInput.swift in Sources */,
 				76DEE41425D1A7A2CBDD5789 /* DayInteractorOutput.swift in Sources */,
 				6BB792BE21BEAA03008C92D8 /* LoadableViewController.swift in Sources */,
 				268BFE8021D70CE4DB1D7B33 /* DayInteractor.swift in Sources */,
+				6BB792D321BF90EC008C92D8 /* RegistrableSupplementaryViewComponent.swift in Sources */,
 				3D9868FCD35B7FC312D88BE1 /* DayRouterInput.swift in Sources */,
+				6BB792EE21BF913F008C92D8 /* RegistrableComponent.swift in Sources */,
 				6BB792C421BEACEB008C92D8 /* MirrorExtensions.swift in Sources */,
 				37B2542AFE8641ECF88CB76E /* DayRouter.swift in Sources */,
 				9811A74A041E3C07E5C78A10 /* DayAssembly.swift in Sources */,

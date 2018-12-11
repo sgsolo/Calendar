@@ -8,4 +8,5 @@
 
 protocol DayRouterInput: class {
 
+    func popViewController()
 }

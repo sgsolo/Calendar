@@ -26,3 +26,5 @@ final class CalendarCell: JTAppleCell {
         self.meetingDayMarkView.layer.cornerRadius = self.meetingDayMarkView.bounds.width / 2
     }
 }
+
+extension CalendarCell: RegistrableComponent {}

@@ -15,10 +15,11 @@ class DayViewController: BaseViewController, DayViewInput {
 
     // MARK: Lifecycle
 
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        configureNavigationBar()
-//    }
+    
+    override func setupView() {
+        super.setupView()
+        configureNavigationBar()
+    }
     
     func configureNavigationBar() {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(didTapNavigationItem))
@@ -27,7 +28,7 @@ class DayViewController: BaseViewController, DayViewInput {
     //MARK: Actions
     
     @objc func didTapNavigationItem() {
-        self.navigationController?.popViewController(animated: true)
+        output.didTapNavigationItem()
     }
     
 }
