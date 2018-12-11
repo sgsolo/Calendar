@@ -29,6 +29,7 @@
 		6BB792BF21BEAA03008C92D8 /* ViewLifecycleObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792BC21BEAA03008C92D8 /* ViewLifecycleObserver.swift */; };
 		6BB792C021BEAA03008C92D8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792BD21BEAA03008C92D8 /* BaseViewController.swift */; };
 		6BB792C421BEACEB008C92D8 /* MirrorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792C321BEACEB008C92D8 /* MirrorExtensions.swift */; };
+		6BB792C721BF88D5008C92D8 /* CalendarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB792C621BF88D5008C92D8 /* CalendarBuilder.swift */; };
 		6BECCF6B2187021B0062A2BE /* CommonAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BECCF6A2187021B0062A2BE /* CommonAssembly.swift */; };
 		756B088ECA026BCE749D1D0E /* CalendarViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879DCD94819E89216F27D68A /* CalendarViewInput.swift */; };
 		761EA98F8B054737F41E6B38 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFC38F632F03E88227D7CD /* DayViewController.swift */; };
@@ -66,6 +67,7 @@
 		6BB792BC21BEAA03008C92D8 /* ViewLifecycleObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewLifecycleObserver.swift; sourceTree = "<group>"; };
 		6BB792BD21BEAA03008C92D8 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		6BB792C321BEACEB008C92D8 /* MirrorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorExtensions.swift; sourceTree = "<group>"; };
+		6BB792C621BF88D5008C92D8 /* CalendarBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarBuilder.swift; sourceTree = "<group>"; };
 		6BECCF6A2187021B0062A2BE /* CommonAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAssembly.swift; sourceTree = "<group>"; };
 		7075BFF1FF41D725D5E8F60D /* CalendarInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarInteractorOutput.swift; sourceTree = "<group>"; };
 		7195210A7208A6E6FF3420A9 /* DayPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DayPresenter.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 		6BB792BA21BEA94D008C92D8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6BB792C521BF8898008C92D8 /* Builders */,
 				6BB792C221BEAA9F008C92D8 /* Extentions */,
 				6BB792C121BEAA7E008C92D8 /* ViewController */,
 			);
@@ -269,6 +272,14 @@
 				6BB792C321BEACEB008C92D8 /* MirrorExtensions.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		6BB792C521BF8898008C92D8 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				6BB792C621BF88D5008C92D8 /* CalendarBuilder.swift */,
+			);
+			path = Builders;
 			sourceTree = "<group>";
 		};
 		7710EF985A226D850CC17E30 /* View */ = {
@@ -480,6 +491,7 @@
 				6BECCF6B2187021B0062A2BE /* CommonAssembly.swift in Sources */,
 				3E776078C5796C315DA9896F /* CalendarPresenter.swift in Sources */,
 				CBE6B4A46835648BCFF1060D /* CalendarInteractorInput.swift in Sources */,
+				6BB792C721BF88D5008C92D8 /* CalendarBuilder.swift in Sources */,
 				8F312207882A1CAA6CC35736 /* CalendarInteractorOutput.swift in Sources */,
 				44E78CF33C99D6AC3D497BA4 /* CalendarInteractor.swift in Sources */,
 				474D8DCEB736ED63CE861C94 /* CalendarRouterInput.swift in Sources */,

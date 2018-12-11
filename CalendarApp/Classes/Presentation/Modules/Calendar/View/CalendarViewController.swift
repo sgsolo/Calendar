@@ -29,11 +29,6 @@ class CalendarViewController: BaseViewController, CalendarViewInput {
         super.init(coder: aDecoder)
     }
     
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        self.configureCalendar()
-//    }
-    
     func configureCalendar() {
         self.view.addSubview(calendarView)
         calendarView.calendarDelegate = self
@@ -46,20 +41,10 @@ class CalendarViewController: BaseViewController, CalendarViewInput {
         calendarView.scrollToDate(Date(),
                                   triggerScrollToDateDelegate: false,
                                   animateScroll: false,
-                                  preferredScrollPosition: .centeredHorizontally,
+                                  preferredScrollPosition: .left,
                                   completionHandler: { [weak self] in
-                                    self?.calendarView.visibleDates { self?.setupViewsOfCalendar(from: $0) }
+                                    self?.calendarView.visibleDates { self?.monthLabel.text = self?.mounthWithYear(from: $0) }
         })
-    }
-    
-    private func setupViewsOfCalendar(from visibleDates: DateSegmentInfo) {
-        guard let startDate = visibleDates.monthDates.first?.date else { return }
-        
-        let month = Calendar.current.dateComponents([.month], from: startDate).month!
-        let formatter = DateFormatter()
-        let monthName = formatter.monthSymbols[(month - 1) % 12]
-        let year = Calendar.current.component(.year, from: startDate)
-        self.monthLabel.text = monthName + " " + String(year)
     }
     
     override func viewWillLayoutSubviews() {
@@ -93,7 +78,7 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
-        self.setupViewsOfCalendar(from: visibleDates)
+        self.monthLabel.text = self.mounthWithYear(from: visibleDates)
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
@@ -113,6 +98,19 @@ extension CalendarViewController: JTAppleCalendarViewDataSource {
         let endDate = formatter.date(from: "2100 12 31")!
         let parameters = ConfigurationParameters(startDate: startDate, endDate: endDate, firstDayOfWeek: .monday)
         return parameters
+    }
+}
+
+extension CalendarViewController {
+    
+    private func mounthWithYear(from dateSegmentInfo: DateSegmentInfo) -> String {
+        guard let startDate = dateSegmentInfo.monthDates.first?.date else { return "" }
+        
+        let month = Calendar.current.dateComponents([.month], from: startDate).month!
+        let formatter = DateFormatter()
+        let monthName = formatter.monthSymbols[(month - 1) % 12]
+        let year = Calendar.current.component(.year, from: startDate)
+        return monthName + " " + String(year)
     }
 }
 
