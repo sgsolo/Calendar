@@ -32,7 +32,7 @@ class CalendarCollectionViewAdapter: BaseCollectionViewAdapter {
         }
         set {
             calendarView = newValue as? JTAppleCalendarView
-            self.prepareCollectionView()
+            prepareCollectionView()
         }
     }
     
@@ -74,20 +74,6 @@ extension CalendarCollectionViewAdapter: JTAppleCalendarViewDelegate {
         } else {
             cell.dayLabel.textColor = .gray
         }
-        
-//        let todayDateComponents = Calendar.current.dateComponents([.year, .month, .day], from: Date())
-//        let cellStateDateComponents = Calendar.current.dateComponents([.year, .month, .day], from: cellState.date)
-//        if todayDateComponents.year == cellStateDateComponents.year &&
-//            todayDateComponents.month == cellStateDateComponents.month &&
-//            todayDateComponents.day == cellStateDateComponents.day {
-//            cell.selectedView.isHidden = false
-//            cell.meetingDayMarkView.isHidden = true
-//            cell.dayLabel.textColor = .white
-//            cell.dayLabel.font = UIFont.boldSystemFont(ofSize: 15)
-//            cell.selectedView.isHidden = true
-//            cell.meetingDayMarkView.isHidden = true
-//            cell.dayLabel.font = UIFont.systemFont(ofSize: 15)
-//        }
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {

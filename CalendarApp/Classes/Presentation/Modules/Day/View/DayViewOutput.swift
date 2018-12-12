@@ -9,4 +9,5 @@
 protocol DayViewOutput: ViewLifecycleObserver {
 
     func didTapNavigationItem()
+    func didTapNewItem()
 }

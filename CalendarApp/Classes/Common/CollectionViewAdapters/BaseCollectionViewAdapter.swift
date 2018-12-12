@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct CollectionSectionData {
+struct SectionData {
     var header: Any?
     var footer: Any?
     var objects: [Any]
@@ -23,12 +23,11 @@ struct CollectionSectionData {
 protocol BaseCollectionViewAdpaterInput: class {
     var collectionView: UICollectionView? { get set }
     
-    func updateData(with models: [CollectionSectionData])
+    func updateData(with models: [SectionData])
 }
 
 protocol BaseCollectionViewAdapterOutput: class {
     func didSelectCollectionCell(at indexPath: IndexPath)
-    func didFocusOnCollectionCell(at indexPath: IndexPath)
     func didEndScrollingAnimation()
     func didEndDragging(willDecelerate: Bool)
     func didEndDecelerating()
@@ -36,7 +35,6 @@ protocol BaseCollectionViewAdapterOutput: class {
 
 extension BaseCollectionViewAdapterOutput {
     func didSelectCollectionCell(at indexPath: IndexPath) {}
-    func didFocusOnCollectionCell(at indexPath: IndexPath) {}
     func didEndScrollingAnimation() {}
     func didEndDragging(willDecelerate: Bool) {}
     func didEndDecelerating() {}
@@ -54,7 +52,7 @@ class BaseCollectionViewAdapter: NSObject, BaseCollectionViewAdpaterInput {
         }
     }
     
-    var collectionSections: [CollectionSectionData] = []
+    var collectionSections: [SectionData] = []
     
     /// Classes for used cells
     ///
@@ -109,7 +107,7 @@ class BaseCollectionViewAdapter: NSObject, BaseCollectionViewAdpaterInput {
     
     // MARK: BaseCollectionViewAdpaterInput
     
-    func updateData(with models: [CollectionSectionData]) {
+    func updateData(with models: [SectionData]) {
         self.collectionSections = models
         
         self.collectionView?.reloadData()
@@ -157,11 +155,6 @@ extension BaseCollectionViewAdapter: UICollectionViewDataSource {
 extension BaseCollectionViewAdapter: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.output?.didSelectCollectionCell(at: indexPath)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didUpdateFocusIn context: UICollectionViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
-        guard let indexPath = context.nextFocusedIndexPath else { return }
-        self.output?.didFocusOnCollectionCell(at: indexPath)
     }
     
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {

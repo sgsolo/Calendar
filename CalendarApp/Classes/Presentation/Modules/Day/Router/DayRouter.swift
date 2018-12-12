@@ -15,4 +15,11 @@ class DayRouter: NSObject, DayRouterInput {
     func popViewController() {
         transitionHandler.navigationController?.popViewController(animated: true)
     }
+    
+    func openNewViewController() {
+        let storyboard = try! addTrainingAssembly.resolve() as UIStoryboard
+        guard let destinationViewController = storyboard.instantiateViewController(withIdentifier: "AddTrainingViewController") as? AddTrainingViewController else { return }
+        
+        self.transitionHandler.navigationController?.pushViewController(destinationViewController, animated: true)
+    }
 }

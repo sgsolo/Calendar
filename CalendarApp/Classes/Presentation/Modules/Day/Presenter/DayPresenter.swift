@@ -20,4 +20,8 @@ extension DayPresenter: DayViewOutput {
     func didTapNavigationItem() {
         router.popViewController()
     }
+    
+    func didTapNewItem() {
+        router.openNewViewController()
+    }
 }

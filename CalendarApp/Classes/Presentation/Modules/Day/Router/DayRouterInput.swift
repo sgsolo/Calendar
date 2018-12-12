@@ -9,4 +9,5 @@
 protocol DayRouterInput: class {
 
     func popViewController()
+    func openNewViewController()
 }

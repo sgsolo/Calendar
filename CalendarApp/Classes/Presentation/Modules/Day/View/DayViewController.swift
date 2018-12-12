@@ -23,12 +23,17 @@ class DayViewController: BaseViewController, DayViewInput {
     
     func configureNavigationBar() {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(didTapNavigationItem))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "add new", style: UIBarButtonItem.Style.done, target: self, action: #selector(didTapNewItem))//UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(didTapNavigationItem))
     }
     
     //MARK: Actions
     
     @objc func didTapNavigationItem() {
         output.didTapNavigationItem()
+    }
+    
+    @objc func didTapNewItem() {
+        output.didTapNewItem()
     }
     
 }

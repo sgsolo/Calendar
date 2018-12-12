@@ -20,3 +20,9 @@ extension RegistrableComponent where Self: UIView {
         return .nib(UINib(nibName: String(describing: self.classForCoder()), bundle: bundle))
     }
 }
+
+extension RegistrableComponent where Self: UITableViewCell {
+    static var registrableSource: RegistrableSource {
+        return .class
+    }
+}
