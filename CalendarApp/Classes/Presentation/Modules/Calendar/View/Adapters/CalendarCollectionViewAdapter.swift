@@ -38,7 +38,6 @@ class CalendarCollectionViewAdapter: BaseCollectionViewAdapter {
     
     override init() {
         super.init()
-        
         self.cellClasses = [CalendarCell.self]
     }
     
@@ -46,28 +45,14 @@ class CalendarCollectionViewAdapter: BaseCollectionViewAdapter {
         super.prepareCollectionView()
         calendarView?.calendarDelegate = self
         calendarView?.calendarDataSource = self
-        calendarView?.scrollDirection = .horizontal
-        calendarView?.isPagingEnabled = true
-        calendarView?.backgroundColor = .white
         
         calendarView?.scrollToDate(Date(),
-                                  triggerScrollToDateDelegate: false,
+                                  triggerScrollToDateDelegate: true,
                                   animateScroll: false,
-                                  preferredScrollPosition: .left,
                                   completionHandler: { [weak self] in
-                                    self?.calendarView?.visibleDates { self?.calendarOutput?.didScrollToDateSegment(visibleDates: $0) }})
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = super.collectionView(collectionView, cellForItemAt: indexPath)
+                                    self?.calendarView?.visibleDates { self?.calendarOutput?.didScrollToDateSegment(visibleDates: $0) }
+        })
         
-        if let cellWithColleciton = (cell as? CellWithCollection) {
-            cellWithColleciton.didTapCollectionItem = { [unowned self] collectionIndexPath in
-                self.output?.didSelectCollectionCell(at: IndexPath(item: collectionIndexPath.item, section: indexPath.item))
-            }
-        }
-        
-        return cell
     }
 }
 
@@ -77,8 +62,32 @@ extension CalendarCollectionViewAdapter: JTAppleCalendarViewDelegate {
     
     func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
         let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: String(describing: CalendarCell.self), for: indexPath) as! CalendarCell
+        configureCell(cell, cellState: cellState)
         cell.dayLabel.text = cellState.text
         return cell
+    }
+    
+    private func configureCell(_ cell: CalendarCell, cellState: CellState) {
+        
+        if cellState.dateBelongsTo == .thisMonth {
+            cell.dayLabel.textColor = .black
+        } else {
+            cell.dayLabel.textColor = .gray
+        }
+        
+//        let todayDateComponents = Calendar.current.dateComponents([.year, .month, .day], from: Date())
+//        let cellStateDateComponents = Calendar.current.dateComponents([.year, .month, .day], from: cellState.date)
+//        if todayDateComponents.year == cellStateDateComponents.year &&
+//            todayDateComponents.month == cellStateDateComponents.month &&
+//            todayDateComponents.day == cellStateDateComponents.day {
+//            cell.selectedView.isHidden = false
+//            cell.meetingDayMarkView.isHidden = true
+//            cell.dayLabel.textColor = .white
+//            cell.dayLabel.font = UIFont.boldSystemFont(ofSize: 15)
+//            cell.selectedView.isHidden = true
+//            cell.meetingDayMarkView.isHidden = true
+//            cell.dayLabel.font = UIFont.systemFont(ofSize: 15)
+//        }
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
@@ -100,8 +109,8 @@ extension CalendarCollectionViewAdapter: JTAppleCalendarViewDataSource {
         formatter.timeZone = Calendar.current.timeZone
         let startDate = formatter.date(from: "2017 01 01")!
         let endDate = formatter.date(from: "2100 12 31")!
-        let parameters = ConfigurationParameters(startDate: startDate, endDate: endDate, firstDayOfWeek: .monday)
-        return parameters
+        let numberOfRows = 6
+        return ConfigurationParameters(startDate: startDate, endDate: endDate, numberOfRows: numberOfRows, firstDayOfWeek: .monday)
     }
 }
 

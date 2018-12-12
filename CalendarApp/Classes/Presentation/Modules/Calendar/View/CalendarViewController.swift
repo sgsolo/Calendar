@@ -12,8 +12,8 @@ class CalendarViewController: BaseViewController, CalendarViewInput {
 
     var output: CalendarViewOutput!
     var adapter: CalendarCollectionViewAdapterInput!
-    let calendarView = JTAppleCalendarView()
-    
+
+    @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var daysOfWeekContainerView: UIView!
     @IBOutlet weak var monthLabel: UILabel!
     
@@ -22,18 +22,7 @@ class CalendarViewController: BaseViewController, CalendarViewInput {
     override func setupView() {
         super.setupView()
         
-        self.view.addSubview(calendarView)
         adapter.collectionView = calendarView
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        let frame = self.view.frame
-        let guide = self.view.safeAreaInsets
-        self.calendarView.frame = CGRect(x: frame.origin.x,
-                                         y: frame.origin.y + guide.top + daysOfWeekContainerView.frame.size.height,
-                                         width: frame.size.width,
-                                         height: frame.size.height - guide.top - guide.bottom)
     }
     
     @IBAction func prevButtonTap(_ sender: Any) {
