@@ -8,4 +8,7 @@
 
 protocol AddTrainingViewOutput: class {
 
+    func getExercises() -> [SectionData]
+    func filterExercises(by text: String?) -> [SectionData]
+    func didSelectTableViewCell(row: Int)
 }

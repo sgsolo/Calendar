@@ -25,7 +25,9 @@ let addTrainingAssembly = DependencyContainer { container in
         .resolvingProperties { container, view in
             view.output = try! container.resolve()
             view.moduleInput = view.output as? AddTrainingModuleInput
-            view.adapter = AddTrainingTabelViewAdapter()
+            let adapter = AddTrainingTabelViewAdapter()
+            adapter.output = view
+            view.adapter = adapter
     }
     
     container.register(.shared) { AddTrainingPresenter() as AddTrainingModuleInput }

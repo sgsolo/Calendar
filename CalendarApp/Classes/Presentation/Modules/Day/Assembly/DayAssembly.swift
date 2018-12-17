@@ -25,6 +25,9 @@ let dayAssembly = DependencyContainer { container in
         .resolvingProperties { container, view in
             view.output = try! container.resolve()
             view.moduleInput = view.output as? DayModuleInput
+            let adapter = DayTabelViewAdapter()
+            adapter.output = view
+            view.adapter = adapter
     }
     
     container.register(.shared) { DayPresenter() as DayModuleInput }
@@ -41,6 +44,7 @@ let dayAssembly = DependencyContainer { container in
         .resolvingProperties { container, item in
 	        let interactor = item as! DayInteractor
             interactor.output = try! container.resolve()
+            interactor.coreDataRepository = CoreDataRepositoryImp()
     }
     
     container.register(.shared) { DayRouter() as DayRouterInput }

@@ -11,3 +11,17 @@ import UIKit
 protocol RouterTrait: class {
     var transitionHandler: UIViewController! { get set }
 }
+
+protocol BaseRouterInput: class {
+    
+    func popViewController()
+}
+
+class BaseRouter: RouterTrait {
+    
+    weak var transitionHandler: UIViewController!
+    
+    func popViewController() {
+        transitionHandler.navigationController?.popViewController(animated: true)
+    }
+}

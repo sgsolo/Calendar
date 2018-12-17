@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CalendarApp/Classes/Presentation/Modules/Calendar/Assembly/CalendarAssembly.swift"
-            timestampString = "566317803.858225"
+            timestampString = "566402752.627617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CalendarApp/Classes/Presentation/Modules/Calendar/Assembly/CalendarAssembly.swift"
-            timestampString = "566317803.8583519"
+            timestampString = "566402752.627731"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
@@ -148,7 +148,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CalendarApp/Classes/Presentation/Modules/Day/Assembly/DayAssembly.swift"
-            timestampString = "566290354.60669"
+            timestampString = "566402752.6278991"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
@@ -180,7 +180,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CalendarApp/Classes/Common/CollectionViewAdapters/BaseCollectionViewAdapter.swift"
-            timestampString = "566317803.858551"
+            timestampString = "566402752.628068"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "176"
@@ -196,12 +196,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CalendarApp/Classes/Common/CollectionViewAdapters/BaseCollectionViewAdapter.swift"
-            timestampString = "566317803.858616"
+            timestampString = "566402752.628153"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "134"
             endingLineNumber = "134"
             landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalendarApp/Classes/Common/TableViewAdapter/BaseTableViewAdapter.swift"
+            timestampString = "566402752.62823"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "numberOfSections(in:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalendarApp/Classes/Common/TableViewAdapter/BaseTableViewAdapter.swift"
+            timestampString = "566402752.6283129"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

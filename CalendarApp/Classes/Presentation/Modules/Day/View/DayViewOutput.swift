@@ -8,6 +8,7 @@
 
 protocol DayViewOutput: ViewLifecycleObserver {
 
+    func getExercises() -> [SectionData]
     func didTapNavigationItem()
     func didTapNewItem()
 }

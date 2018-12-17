@@ -6,13 +6,11 @@
 //  Copyright © 2018 Yandex. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol ReusableComponent {
     static var identifier: String { get }
 }
-
-import UIKit
 
 extension ReusableComponent where Self: UIView {
     static var identifier: String {

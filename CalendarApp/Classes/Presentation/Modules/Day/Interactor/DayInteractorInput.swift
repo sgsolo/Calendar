@@ -8,4 +8,6 @@
 
 protocol DayInteractorInput: class {
 
+    func add(exercise: String)
+    func getExecises() -> [String]
 }

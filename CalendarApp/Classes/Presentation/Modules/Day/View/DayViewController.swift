@@ -11,19 +11,23 @@ import UIKit
 class DayViewController: BaseViewController, DayViewInput {
 
     var output: DayViewOutput!
-    //var moduleInput: DayModuleInput!
+    var adapter: BaseTableViewAdpaterInput!
 
+    @IBOutlet weak var tableView: UITableView!
+    
     // MARK: Lifecycle
-
     
     override func setupView() {
         super.setupView()
         configureNavigationBar()
+        
+        adapter.tableView = tableView
+        adapter.updateData(with: output.getExercises())
     }
     
     func configureNavigationBar() {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(didTapNavigationItem))
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "add new", style: UIBarButtonItem.Style.done, target: self, action: #selector(didTapNewItem))//UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(didTapNavigationItem))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "add new", style: UIBarButtonItem.Style.done, target: self, action: #selector(didTapNewItem))
     }
     
     //MARK: Actions
@@ -36,4 +40,11 @@ class DayViewController: BaseViewController, DayViewInput {
         output.didTapNewItem()
     }
     
+}
+
+extension DayViewController: BaseTableViewAdapterOutput {
+    
+    func didSelectTableCell(at indexPath: IndexPath) {
+        adapter.updateData(with: output.getExercises())
+    }
 }

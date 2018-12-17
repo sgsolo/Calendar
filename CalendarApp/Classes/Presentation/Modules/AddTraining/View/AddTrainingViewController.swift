@@ -20,17 +20,32 @@ class AddTrainingViewController: BaseViewController, AddTrainingViewInput {
     override func setupView() {
         super.setupView()
         configureNavigationBar()
-        configureTabelView()
         
         adapter.tableView = tableView
+        adapter.updateData(with: output.getExercises())
     }
     
     func configureNavigationBar() {
-//        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .undo, target: self, action: #selector(didTapNavigationItem))
-//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "add new", style: UIBarButtonItem.Style.done, target: self, action: #selector(didTapNewItem))//UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(didTapNavigationItem))
+        title = "Exercise choice"
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = self
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.dimsBackgroundDuringPresentation = false
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
     }
+}
+
+extension AddTrainingViewController: UISearchResultsUpdating {
     
-    func configureTabelView() {
-        
+    func updateSearchResults(for searchController: UISearchController) {
+        adapter.updateData(with: output.filterExercises(by: searchController.searchBar.text))
+    }
+}
+
+extension AddTrainingViewController: BaseTableViewAdapterOutput {
+    
+    func didSelectTableCell(at indexPath: IndexPath) {
+        output.didSelectTableViewCell(row: indexPath.row)
     }
 }

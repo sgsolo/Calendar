@@ -6,13 +6,11 @@
 //  Copyright © 2018 Yandex. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol RegistrableComponent: ReusableComponent {
     static var registrableSource: RegistrableSource { get }
 }
-
-import UIKit
 
 extension RegistrableComponent where Self: UIView {
     static var registrableSource: RegistrableSource {

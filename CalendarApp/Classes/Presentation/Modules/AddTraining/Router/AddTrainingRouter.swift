@@ -8,7 +8,6 @@
 
 import UIKit
 
-class AddTrainingRouter: NSObject, AddTrainingRouterInput {
+final class AddTrainingRouter: BaseRouter, AddTrainingRouterInput {
 
-	weak var transitionHandler: UIViewController!
 }

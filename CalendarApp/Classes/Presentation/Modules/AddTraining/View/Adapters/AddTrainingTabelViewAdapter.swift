@@ -12,15 +12,18 @@ class AddTrainingTabelViewAdapter: BaseTableViewAdapter {
     
     override init() {
         super.init()
-        self.cellClasses = [UITableViewCell.self]
-        
-        self.tableSections = [SectionData(objects: ["training"])]
+        self.cellClasses = [AddTrainingTableViewCell.self]
     }
-    
-//    override func cellClass(for model: Any) -> RegistrableComponent.Type? {
-//        return UITableViewCell.self
-//    }
-    
 }
 
-extension UITableViewCell: RegistrableComponent {}
+class AddTrainingTableViewCell: UITableViewCell {}
+
+extension AddTrainingTableViewCell: RegistrableComponent, ConfigurableComponent {
+    
+    func configure(with object: Any) {
+        if let object = object as? String {
+            self.textLabel?.text = object
+        }
+    }
+}
+

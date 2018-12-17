@@ -8,9 +8,8 @@
 
 import UIKit
 
-class CalendarRouter: NSObject, CalendarRouterInput {
+final class CalendarRouter: BaseRouter, CalendarRouterInput {
 
-	weak var transitionHandler: UIViewController!
 }
 
 extension CalendarRouter {

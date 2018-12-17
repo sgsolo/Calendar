@@ -17,11 +17,26 @@ class DayPresenter: NSObject, DayModuleInput, DayInteractorOutput {
 
 extension DayPresenter: DayViewOutput {
     
+    func getExercises() -> [SectionData] {
+        return getSectionData(objects: interactor.getExecises())
+    }
+    
+    private func getSectionData(objects: [Any]) -> [SectionData] {
+        return [SectionData(objects: objects)]
+    }
+    
     func didTapNavigationItem() {
         router.popViewController()
     }
     
     func didTapNewItem() {
         router.openNewViewController()
+    }
+}
+
+extension DayPresenter: AddTrainingModuleDelegate {
+    
+    func didSelect(exercise: String) {
+        interactor.add(exercise: exercise)
     }
 }

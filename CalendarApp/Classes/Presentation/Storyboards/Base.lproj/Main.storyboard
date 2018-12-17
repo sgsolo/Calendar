@@ -181,7 +181,19 @@
                     <view key="view" contentMode="scaleToFill" id="123-qN-cXD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pGF-ij-rNL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pGF-ij-rNL" firstAttribute="leading" secondItem="haQ-b6-vAm" secondAttribute="leading" id="ONa-HV-Wkh"/>
+                            <constraint firstItem="haQ-b6-vAm" firstAttribute="bottom" secondItem="pGF-ij-rNL" secondAttribute="bottom" id="Zzf-xJ-X7p"/>
+                            <constraint firstItem="pGF-ij-rNL" firstAttribute="top" secondItem="haQ-b6-vAm" secondAttribute="top" id="b1C-FQ-M7d"/>
+                            <constraint firstItem="haQ-b6-vAm" firstAttribute="trailing" secondItem="pGF-ij-rNL" secondAttribute="trailing" id="fYR-IW-7Ce"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="haQ-b6-vAm"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
@@ -190,6 +202,9 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="dipTag" value="DayViewController"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="tableView" destination="pGF-ij-rNL" id="Iqu-Yu-YJA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IAZ-Tm-Qfa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

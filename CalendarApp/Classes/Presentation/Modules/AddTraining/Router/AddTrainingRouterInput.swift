@@ -6,6 +6,6 @@
 //  Copyright © 2018 High Technologies Center. All rights reserved.
 //
 
-protocol AddTrainingRouterInput: class {
+protocol AddTrainingRouterInput: BaseRouterInput {
 
 }

@@ -128,6 +128,7 @@ extension BaseTableViewAdapter: UITableViewDataSource {
 extension BaseTableViewAdapter: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         self.output?.didSelectTableCell(at: indexPath)
     }
     
@@ -143,17 +144,11 @@ extension BaseTableViewAdapter: UITableViewDelegate {
         self.output?.didEndDecelerating()
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let viewClass = self.supplementaryViewClass(for: section, kind: "header") else {
-            return UICollectionReusableView()
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if let object = self.tableSections[section].header as? String {
+            return object
         }
-        let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: viewClass.identifier)
-        
-        if let object = self.tableSections[section].header {
-            (view as? ConfigurableComponent)?.configure(with: object)
-        }
-        
-        return view
+        return ""
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {

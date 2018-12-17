@@ -8,6 +8,7 @@
 
 import UIKit
 
+let coreDataStore = CoreDataStore()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
