@@ -244,12 +244,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CalendarApp/Classes/Presentation/Modules/Day/Presenter/DayPresenter.swift"
-            timestampString = "568793800.8397321"
+            timestampString = "568802729.944357"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
             endingLineNumber = "27"
             landmarkName = "viewWillAppear()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalendarApp/Classes/Presentation/Modules/Day/Presenter/DayPresenter.swift"
+            timestampString = "568802729.944437"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "didSelect(exercise:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

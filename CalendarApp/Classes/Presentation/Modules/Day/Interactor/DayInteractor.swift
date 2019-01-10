@@ -26,4 +26,9 @@ class DayInteractor: NSObject, DayInteractorInput {
         return exercises
     }
     
+    func getExecisesEntity(date: Date) -> [String] {
+        let exercises = coreDataRepository.getExercises(date: date).compactMap { $0.exercise }
+        return exercises
+    }
+    
 }

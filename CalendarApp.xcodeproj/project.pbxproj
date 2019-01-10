@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		0309F307CB557CE48C8D4FF7 /* AddTrainingRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A3A9154CE1CD7A94C6D84 /* AddTrainingRouterInput.swift */; };
 		13D318B0AC6A03115452EC2E /* Pods_CalendarApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0095357063731CFAEC33204C /* Pods_CalendarApp.framework */; };
+		1D6E2AE70F596C37D47F137B /* EditExerciseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8A5E63F021699295E9B176 /* EditExerciseRouter.swift */; };
+		1D6E3208F1D5F0FC3FD6CF51 /* ExerciseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C818C8B0FD4BF6242FF511E1 /* ExerciseRouter.swift */; };
 		210C40134036F9C5DA54D538 /* AddTrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB18CFDC6E747E20F95447E /* AddTrainingViewController.swift */; };
+		236A36CC17F48F7F3A2DE391 /* ExerciseRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B03ABEA11ACF0393B5F24BB /* ExerciseRouterInput.swift */; };
 		268BFE8021D70CE4DB1D7B33 /* DayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D0A5C342FF79F01FF87B2 /* DayInteractor.swift */; };
 		26922964FB0AF8865EFE2087 /* AddTrainingViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A903ECB4A4CAF07B50382341 /* AddTrainingViewOutput.swift */; };
+		2A307168A71CC9AC8D7521A7 /* EditExerciseInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9585124F2043FF94F0FA720 /* EditExerciseInteractorOutput.swift */; };
 		37B2542AFE8641ECF88CB76E /* DayRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4140685A534ED07495B71525 /* DayRouter.swift */; };
 		3C85A95663B515F9B8EFCBE0 /* CalendarViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813143D0A5BD896148F1EA84 /* CalendarViewOutput.swift */; };
 		3D9868FCD35B7FC312D88BE1 /* DayRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45C2A34171F8F4891620028 /* DayRouterInput.swift */; };
@@ -22,12 +26,16 @@
 		48223F130F6E24706E2D2B8C /* DayViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF149042E7FC2E841DDFEA2 /* DayViewOutput.swift */; };
 		4A13AEBC554965CD38532107 /* DayInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0CCD43EA9E1210616C2091 /* DayInteractorInput.swift */; };
 		4B1BE5023A95809B644233DD /* CalendarModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7489D88750532B131D21F5C /* CalendarModuleInput.swift */; };
+		5500B124196DF1287FA02627 /* ExerciseInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9D166313728ECBEE9FBFE /* ExerciseInteractorOutput.swift */; };
 		5531CEA252E4BA625639C8D9 /* AddTrainingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC3F428D015F7F9796A60EB /* AddTrainingAssembly.swift */; };
+		5ADF644B2654467F0637D1F2 /* ExerciseViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57CA45506DE31EF84F926DE /* ExerciseViewInput.swift */; };
+		660D35D348437F27279E5F15 /* EditExerciseModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E827B6C67BF9FEB7943270 /* EditExerciseModuleInput.swift */; };
 		69BF0281F8CD124CFF3BA826 /* DayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195210A7208A6E6FF3420A9 /* DayPresenter.swift */; };
 		6B121BFB21847BC1008CFDCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B121BFA21847BC1008CFDCD /* AppDelegate.swift */; };
 		6B121C0021847BC1008CFDCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B121BFE21847BC1008CFDCD /* Main.storyboard */; };
 		6B121C0221847BC3008CFDCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B121C0121847BC3008CFDCD /* Assets.xcassets */; };
 		6B121C0521847BC3008CFDCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B121C0321847BC3008CFDCD /* LaunchScreen.storyboard */; };
+		6B1D899721E73D8000965C80 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D899621E73D8000965C80 /* Exercise.swift */; };
 		6BA0F07C21C13CD40018B300 /* AddTrainingTabelViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0F07B21C13CD40018B300 /* AddTrainingTabelViewAdapter.swift */; };
 		6BA0F07F21C13FC10018B300 /* BaseTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0F07E21C13FC10018B300 /* BaseTableViewAdapter.swift */; };
 		6BA0F08521C24B250018B300 /* CalendarApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0F08321C24B250018B300 /* CalendarApp.xcdatamodeld */; };
@@ -70,19 +78,34 @@
 		75B78D4391EE2160E1B97D4D /* AddTrainingInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E4A655A8700745BE6CBD5D /* AddTrainingInteractorOutput.swift */; };
 		761EA98F8B054737F41E6B38 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFC38F632F03E88227D7CD /* DayViewController.swift */; };
 		76DEE41425D1A7A2CBDD5789 /* DayInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14868B3EB84369D0BDC0B027 /* DayInteractorOutput.swift */; };
+		822F4CC9F929F2765B468EB9 /* EditExerciseRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09075F29057102054530951 /* EditExerciseRouterInput.swift */; };
+		87989339E7CC5F68A56E353F /* ExerciseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782192819406515613B698E1 /* ExerciseAssembly.swift */; };
+		89D072E15204E3F7237F0159 /* ExerciseViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA8EAAD2AC143245AD0CBAB /* ExerciseViewOutput.swift */; };
+		8A0C58B4A324BFAC3DD85DB8 /* EditExercisePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40692AB51A2F86943BBDD48A /* EditExercisePresenter.swift */; };
 		8C98DE1B3E8846D7624A4311 /* AddTrainingInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B562DE7BA66DC7694F40260A /* AddTrainingInteractorInput.swift */; };
 		8D8E2FB4E27EA76E3AA9E3B5 /* DayViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48E629D49C04DD97DF21AC9 /* DayViewInput.swift */; };
 		8F2B16E9354E398F4A25EFDB /* CalendarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C99E1C1F3C966FA04F467 /* CalendarAssembly.swift */; };
 		8F312207882A1CAA6CC35736 /* CalendarInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7075BFF1FF41D725D5E8F60D /* CalendarInteractorOutput.swift */; };
+		8F3EC53DB1D0FE754B5F8333 /* ExerciseModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B14E9E572DB3E01637CF0 /* ExerciseModuleInput.swift */; };
+		9480E26B3E493D5ACB9460FA /* EditExerciseViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCDB6655E034F77A3D435 /* EditExerciseViewInput.swift */; };
 		9811A74A041E3C07E5C78A10 /* DayAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B58437A6EC68A722119224C /* DayAssembly.swift */; };
+		9811DE57916BADB2A27BB15C /* ExercisePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BA9543A6D84FC725DC08E0 /* ExercisePresenter.swift */; };
 		98B6D7D6741B7A203783B5F9 /* CalendarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32544278E645EF7478065762 /* CalendarRouter.swift */; };
 		998F25A7AAC49B7F7D6EA5DA /* AddTrainingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CDAFDBFF63EF342C4CDF1B /* AddTrainingPresenter.swift */; };
 		A83337D5DDC20A88EED83702 /* AddTrainingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E511E07284FC3368176CDD9A /* AddTrainingRouter.swift */; };
+		BBE263F29112F1FA6387DB72 /* EditExerciseViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6AB7A41CF84EFB0985A55B /* EditExerciseViewOutput.swift */; };
+		C3126A4A0A086459FF48FA9E /* ExerciseInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420D5A1A318FE37ACB0C9561 /* ExerciseInteractorInput.swift */; };
 		C330239F959C75946A0AEDC4 /* AddTrainingViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F43DA6271F609C55CD2C8 /* AddTrainingViewInput.swift */; };
+		C40860FF186FD33A4FBFD716 /* ExerciseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39F78337939733DC13BAFE1 /* ExerciseInteractor.swift */; };
 		CB9D33BE4D2F3F8940672C80 /* AddTrainingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA7B4F5B051385B584FD884 /* AddTrainingInteractor.swift */; };
 		CBE6B4A46835648BCFF1060D /* CalendarInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B69761CAC14B228CD63F3D /* CalendarInteractorInput.swift */; };
+		CF756AB811FE4F4EA66E42EC /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF92232C3C330B154B187AD1 /* ExerciseViewController.swift */; };
+		DA549FFFE72C2EDD39953FD7 /* EditExerciseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7B4ECDA8F5A8CADC339D77 /* EditExerciseInteractor.swift */; };
 		DB2A074E67600C9C4407CBBA /* DayModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509713C4074D1AA7370571D /* DayModuleInput.swift */; };
+		DED5453AE7B154D8ED6430A3 /* EditExerciseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F264CF0512E2173AA9F988 /* EditExerciseAssembly.swift */; };
+		EA5679953F9EEC1AD527B009 /* EditExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21BA60B9F25A2B628F48B6 /* EditExerciseViewController.swift */; };
 		ECCBC6600E68033C9251954B /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B85FD3F0E2A53248216D8D3 /* CalendarViewController.swift */; };
+		F44684E7DB641A4FDF6DD2AE /* EditExerciseInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749B837EDB03541F9C178C7C /* EditExerciseInteractorInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,8 +118,13 @@
 		14E48FFD412105DB0A7ACECD /* AddTrainingModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTrainingModuleInput.swift; sourceTree = "<group>"; };
 		1B58437A6EC68A722119224C /* DayAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DayAssembly.swift; sourceTree = "<group>"; };
 		32544278E645EF7478065762 /* CalendarRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarRouter.swift; sourceTree = "<group>"; };
+		40692AB51A2F86943BBDD48A /* EditExercisePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditExercisePresenter.swift; sourceTree = "<group>"; };
 		4140685A534ED07495B71525 /* DayRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DayRouter.swift; sourceTree = "<group>"; };
+		420D5A1A318FE37ACB0C9561 /* ExerciseInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExerciseInteractorInput.swift; sourceTree = "<group>"; };
 		525C99E1C1F3C966FA04F467 /* CalendarAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarAssembly.swift; sourceTree = "<group>"; };
+		59E827B6C67BF9FEB7943270 /* EditExerciseModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditExerciseModuleInput.swift; sourceTree = "<group>"; };
+		5B21BA60B9F25A2B628F48B6 /* EditExerciseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditExerciseViewController.swift; sourceTree = "<group>"; };
+		5F7B4ECDA8F5A8CADC339D77 /* EditExerciseInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditExerciseInteractor.swift; sourceTree = "<group>"; };
 		653F43DA6271F609C55CD2C8 /* AddTrainingViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTrainingViewInput.swift; sourceTree = "<group>"; };
 		65B69761CAC14B228CD63F3D /* CalendarInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarInteractorInput.swift; sourceTree = "<group>"; };
 		69CDAFDBFF63EF342C4CDF1B /* AddTrainingPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTrainingPresenter.swift; sourceTree = "<group>"; };
@@ -106,6 +134,7 @@
 		6B121C0121847BC3008CFDCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B121C0421847BC3008CFDCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B121C0621847BC3008CFDCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B1D899621E73D8000965C80 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		6BA0F07B21C13CD40018B300 /* AddTrainingTabelViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrainingTabelViewAdapter.swift; sourceTree = "<group>"; };
 		6BA0F07E21C13FC10018B300 /* BaseTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewAdapter.swift; sourceTree = "<group>"; };
 		6BA0F08421C24B250018B300 /* CalendarApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CalendarApp.xcdatamodel; sourceTree = "<group>"; };
@@ -146,25 +175,42 @@
 		6BECCF6A2187021B0062A2BE /* CommonAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAssembly.swift; sourceTree = "<group>"; };
 		7075BFF1FF41D725D5E8F60D /* CalendarInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarInteractorOutput.swift; sourceTree = "<group>"; };
 		7195210A7208A6E6FF3420A9 /* DayPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DayPresenter.swift; sourceTree = "<group>"; };
+		749B837EDB03541F9C178C7C /* EditExerciseInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditExerciseInteractorInput.swift; sourceTree = "<group>"; };
+		782192819406515613B698E1 /* ExerciseAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExerciseAssembly.swift; sourceTree = "<group>"; };
 		7AB18CFDC6E747E20F95447E /* AddTrainingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTrainingViewController.swift; sourceTree = "<group>"; };
+		7B03ABEA11ACF0393B5F24BB /* ExerciseRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExerciseRouterInput.swift; sourceTree = "<group>"; };
 		813143D0A5BD896148F1EA84 /* CalendarViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarViewOutput.swift; sourceTree = "<group>"; };
 		8509713C4074D1AA7370571D /* DayModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DayModuleInput.swift; sourceTree = "<group>"; };
 		8665CF496EF7F12FF2056047 /* Pods-CalendarApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalendarApp/Pods-CalendarApp.release.xcconfig"; sourceTree = "<group>"; };
 		879DCD94819E89216F27D68A /* CalendarViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarViewInput.swift; sourceTree = "<group>"; };
 		8C2A3A9154CE1CD7A94C6D84 /* AddTrainingRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTrainingRouterInput.swift; sourceTree = "<group>"; };
+		8C7B14E9E572DB3E01637CF0 /* ExerciseModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExerciseModuleInput.swift; sourceTree = "<group>"; };
+		99F264CF0512E2173AA9F988 /* EditExerciseAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditExerciseAssembly.swift; sourceTree = "<group>"; };
+		9A5CCDB6655E034F77A3D435 /* EditExerciseViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditExerciseViewInput.swift; sourceTree = "<group>"; };
 		9A8D0A5C342FF79F01FF87B2 /* DayInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DayInteractor.swift; sourceTree = "<group>"; };
 		9B85FD3F0E2A53248216D8D3 /* CalendarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		9C8A5E63F021699295E9B176 /* EditExerciseRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditExerciseRouter.swift; sourceTree = "<group>"; };
 		A7489D88750532B131D21F5C /* CalendarModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarModuleInput.swift; sourceTree = "<group>"; };
 		A903ECB4A4CAF07B50382341 /* AddTrainingViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTrainingViewOutput.swift; sourceTree = "<group>"; };
 		AAF149042E7FC2E841DDFEA2 /* DayViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DayViewOutput.swift; sourceTree = "<group>"; };
 		AD8F83D2B2439F69F15E17B9 /* CalendarRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CalendarRouterInput.swift; sourceTree = "<group>"; };
+		B39F78337939733DC13BAFE1 /* ExerciseInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExerciseInteractor.swift; sourceTree = "<group>"; };
 		B45C2A34171F8F4891620028 /* DayRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DayRouterInput.swift; sourceTree = "<group>"; };
 		B562DE7BA66DC7694F40260A /* AddTrainingInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTrainingInteractorInput.swift; sourceTree = "<group>"; };
 		BAA7B4F5B051385B584FD884 /* AddTrainingInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTrainingInteractor.swift; sourceTree = "<group>"; };
+		C09075F29057102054530951 /* EditExerciseRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditExerciseRouterInput.swift; sourceTree = "<group>"; };
+		C57CA45506DE31EF84F926DE /* ExerciseViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExerciseViewInput.swift; sourceTree = "<group>"; };
 		C6E4A655A8700745BE6CBD5D /* AddTrainingInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTrainingInteractorOutput.swift; sourceTree = "<group>"; };
+		C818C8B0FD4BF6242FF511E1 /* ExerciseRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExerciseRouter.swift; sourceTree = "<group>"; };
 		CA0CCD43EA9E1210616C2091 /* DayInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DayInteractorInput.swift; sourceTree = "<group>"; };
+		CDA8EAAD2AC143245AD0CBAB /* ExerciseViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExerciseViewOutput.swift; sourceTree = "<group>"; };
+		CF92232C3C330B154B187AD1 /* ExerciseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		D48E629D49C04DD97DF21AC9 /* DayViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DayViewInput.swift; sourceTree = "<group>"; };
+		DF6AB7A41CF84EFB0985A55B /* EditExerciseViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditExerciseViewOutput.swift; sourceTree = "<group>"; };
 		E511E07284FC3368176CDD9A /* AddTrainingRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddTrainingRouter.swift; sourceTree = "<group>"; };
+		E9585124F2043FF94F0FA720 /* EditExerciseInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditExerciseInteractorOutput.swift; sourceTree = "<group>"; };
+		EBC9D166313728ECBEE9FBFE /* ExerciseInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExerciseInteractorOutput.swift; sourceTree = "<group>"; };
+		F3BA9543A6D84FC725DC08E0 /* ExercisePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExercisePresenter.swift; sourceTree = "<group>"; };
 		F3EFC38F632F03E88227D7CD /* DayViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,6 +265,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		27F33584EC556B73C5164E69 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				749B837EDB03541F9C178C7C /* EditExerciseInteractorInput.swift */,
+				E9585124F2043FF94F0FA720 /* EditExerciseInteractorOutput.swift */,
+				5F7B4ECDA8F5A8CADC339D77 /* EditExerciseInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		3202AE48A7174E9263E41BCE /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +303,14 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		496710E3E244F4196A8711AA /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				782192819406515613B698E1 /* ExerciseAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		54421C2AA4C25DE6B8551740 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +329,35 @@
 				A9FFA03DFEC23848454656D3 /* Assembly */,
 			);
 			path = Day;
+			sourceTree = "<group>";
+		};
+		58820BDB1F0111290E349F97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A5CCDB6655E034F77A3D435 /* EditExerciseViewInput.swift */,
+				DF6AB7A41CF84EFB0985A55B /* EditExerciseViewOutput.swift */,
+				5B21BA60B9F25A2B628F48B6 /* EditExerciseViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5EAC89F3EB0DE9988B5D0652 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				420D5A1A318FE37ACB0C9561 /* ExerciseInteractorInput.swift */,
+				EBC9D166313728ECBEE9FBFE /* ExerciseInteractorOutput.swift */,
+				B39F78337939733DC13BAFE1 /* ExerciseInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		66A917D0E3393867F0AA7186 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C09075F29057102054530951 /* EditExerciseRouterInput.swift */,
+				9C8A5E63F021699295E9B176 /* EditExerciseRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		67E752A97FB71DB03A852F0C /* Presentation */ = {
@@ -318,7 +411,7 @@
 				6B121BFA21847BC1008CFDCD /* AppDelegate.swift */,
 				6BECCF6A2187021B0062A2BE /* CommonAssembly.swift */,
 				6BB792BA21BEA94D008C92D8 /* Common */,
-				6BA0F08121C24A5D0018B300 /* BusinessLogic */,
+				6B1D899421E73CD500965C80 /* BuisnessLogic */,
 				67E752A97FB71DB03A852F0C /* Presentation */,
 				6BA0F08221C24AEB0018B300 /* Models */,
 			);
@@ -332,6 +425,22 @@
 				6B121C0321847BC3008CFDCD /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6B1D899421E73CD500965C80 /* BuisnessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				6B1D899521E73D0A00965C80 /* Entities */,
+			);
+			path = BuisnessLogic;
+			sourceTree = "<group>";
+		};
+		6B1D899521E73D0A00965C80 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				6B1D899621E73D8000965C80 /* Exercise.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		6BA0F07A21C13C810018B300 /* Adapters */ = {
@@ -355,13 +464,6 @@
 			children = (
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		6BA0F08121C24A5D0018B300 /* BusinessLogic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BusinessLogic;
 			sourceTree = "<group>";
 		};
 		6BA0F08221C24AEB0018B300 /* Models */ = {
@@ -527,6 +629,25 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		7A3BF688D1B15D9F4C34A4C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C57CA45506DE31EF84F926DE /* ExerciseViewInput.swift */,
+				CDA8EAAD2AC143245AD0CBAB /* ExerciseViewOutput.swift */,
+				CF92232C3C330B154B187AD1 /* ExerciseViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B973AB3DA1D1306C6A3B4CE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				59E827B6C67BF9FEB7943270 /* EditExerciseModuleInput.swift */,
+				40692AB51A2F86943BBDD48A /* EditExercisePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		8379AD2417FBBFAA7A729BFF /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -559,6 +680,18 @@
 				BAA7B4F5B051385B584FD884 /* AddTrainingInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A3E5404F8D96EB8DFF34FD58 /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				7A3BF688D1B15D9F4C34A4C9 /* View */,
+				EEA7C2842A107F095143092C /* Presenter */,
+				5EAC89F3EB0DE9988B5D0652 /* Interactor */,
+				DB71F736B02202B924793011 /* Router */,
+				496710E3E244F4196A8711AA /* Assembly */,
+			);
+			path = Exercise;
 			sourceTree = "<group>";
 		};
 		A9FFA03DFEC23848454656D3 /* Assembly */ = {
@@ -602,8 +735,48 @@
 				8379AD2417FBBFAA7A729BFF /* Calendar */,
 				5586D49EBC2366D1865798CD /* Day */,
 				85369B64E675D339CA795EFB /* AddTraining */,
+				A3E5404F8D96EB8DFF34FD58 /* Exercise */,
+				DF370DC7E7A9845CF33D1FA6 /* EditExercise */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		DB71F736B02202B924793011 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7B03ABEA11ACF0393B5F24BB /* ExerciseRouterInput.swift */,
+				C818C8B0FD4BF6242FF511E1 /* ExerciseRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		DF370DC7E7A9845CF33D1FA6 /* EditExercise */ = {
+			isa = PBXGroup;
+			children = (
+				58820BDB1F0111290E349F97 /* View */,
+				7B973AB3DA1D1306C6A3B4CE /* Presenter */,
+				27F33584EC556B73C5164E69 /* Interactor */,
+				66A917D0E3393867F0AA7186 /* Router */,
+				ED70F0DC70B516F4850B0130 /* Assembly */,
+			);
+			path = EditExercise;
+			sourceTree = "<group>";
+		};
+		ED70F0DC70B516F4850B0130 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				99F264CF0512E2173AA9F988 /* EditExerciseAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		EEA7C2842A107F095143092C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8C7B14E9E572DB3E01637CF0 /* ExerciseModuleInput.swift */,
+				F3BA9543A6D84FC725DC08E0 /* ExercisePresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		F4BA879E06C8428B4E06B077 /* Assembly */ = {
@@ -782,6 +955,7 @@
 				6BB792F721BF913F008C92D8 /* ShowAlertRouterInput.swift in Sources */,
 				6BB792ED21BF913F008C92D8 /* URLPathConvertable.swift in Sources */,
 				761EA98F8B054737F41E6B38 /* DayViewController.swift in Sources */,
+				6B1D899721E73D8000965C80 /* Exercise.swift in Sources */,
 				DB2A074E67600C9C4407CBBA /* DayModuleInput.swift in Sources */,
 				6BB792EC21BF913F008C92D8 /* LoadableViewInput.swift in Sources */,
 				6BB7930821BF92BC008C92D8 /* NetworkServiceError.swift in Sources */,
@@ -820,6 +994,28 @@
 				0309F307CB557CE48C8D4FF7 /* AddTrainingRouterInput.swift in Sources */,
 				A83337D5DDC20A88EED83702 /* AddTrainingRouter.swift in Sources */,
 				5531CEA252E4BA625639C8D9 /* AddTrainingAssembly.swift in Sources */,
+				5ADF644B2654467F0637D1F2 /* ExerciseViewInput.swift in Sources */,
+				89D072E15204E3F7237F0159 /* ExerciseViewOutput.swift in Sources */,
+				CF756AB811FE4F4EA66E42EC /* ExerciseViewController.swift in Sources */,
+				8F3EC53DB1D0FE754B5F8333 /* ExerciseModuleInput.swift in Sources */,
+				9811DE57916BADB2A27BB15C /* ExercisePresenter.swift in Sources */,
+				C3126A4A0A086459FF48FA9E /* ExerciseInteractorInput.swift in Sources */,
+				5500B124196DF1287FA02627 /* ExerciseInteractorOutput.swift in Sources */,
+				C40860FF186FD33A4FBFD716 /* ExerciseInteractor.swift in Sources */,
+				236A36CC17F48F7F3A2DE391 /* ExerciseRouterInput.swift in Sources */,
+				1D6E3208F1D5F0FC3FD6CF51 /* ExerciseRouter.swift in Sources */,
+				87989339E7CC5F68A56E353F /* ExerciseAssembly.swift in Sources */,
+				9480E26B3E493D5ACB9460FA /* EditExerciseViewInput.swift in Sources */,
+				BBE263F29112F1FA6387DB72 /* EditExerciseViewOutput.swift in Sources */,
+				EA5679953F9EEC1AD527B009 /* EditExerciseViewController.swift in Sources */,
+				660D35D348437F27279E5F15 /* EditExerciseModuleInput.swift in Sources */,
+				8A0C58B4A324BFAC3DD85DB8 /* EditExercisePresenter.swift in Sources */,
+				F44684E7DB641A4FDF6DD2AE /* EditExerciseInteractorInput.swift in Sources */,
+				2A307168A71CC9AC8D7521A7 /* EditExerciseInteractorOutput.swift in Sources */,
+				DA549FFFE72C2EDD39953FD7 /* EditExerciseInteractor.swift in Sources */,
+				822F4CC9F929F2765B468EB9 /* EditExerciseRouterInput.swift in Sources */,
+				1D6E2AE70F596C37D47F137B /* EditExerciseRouter.swift in Sources */,
+				DED5453AE7B154D8ED6430A3 /* EditExerciseAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

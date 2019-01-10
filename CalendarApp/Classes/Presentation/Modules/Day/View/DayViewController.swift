@@ -52,6 +52,6 @@ class DayViewController: BaseViewController, DayViewInput {
 extension DayViewController: BaseTableViewAdapterOutput {
     
     func didSelectTableCell(at indexPath: IndexPath) {
-        adapter.updateData(with: output.getExercises())
+        output.didSelectExercise(index:indexPath.item)
     }
 }

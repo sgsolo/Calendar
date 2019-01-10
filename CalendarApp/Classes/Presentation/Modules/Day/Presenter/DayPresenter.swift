@@ -44,7 +44,11 @@ extension DayPresenter: DayViewOutput {
     }
     
     func didTapNewItem() {
-        router.openNewViewController()
+        router.openAddTrainingViewController()
+    }
+    
+    func didSelectExercise(index: Int) {
+        router.openExerciseViewController()
     }
 }
 
