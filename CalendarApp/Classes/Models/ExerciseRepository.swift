@@ -1,5 +1,5 @@
 //
-//  Exercise.swift
+//  ExerciseRepository.swift
 //  CalendarApp
 //
 //  Created by Григорий Соловьев on 10/01/2019.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct Exercise {
+protocol ExerciseRepository: class {
     
-    var date: Date?
-    var exercise: String?
-    var approach: NSSet?
+    func add(exercise: Exercise)
+    func getExercises(date: Date) -> [Exercise]
+    func update(exercises: [Exercise])
 }

@@ -36,6 +36,8 @@
 		6B121C0221847BC3008CFDCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B121C0121847BC3008CFDCD /* Assets.xcassets */; };
 		6B121C0521847BC3008CFDCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B121C0321847BC3008CFDCD /* LaunchScreen.storyboard */; };
 		6B1D899721E73D8000965C80 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D899621E73D8000965C80 /* Exercise.swift */; };
+		6B1D899921E73EE400965C80 /* ExerciseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D899821E73EE400965C80 /* ExerciseRepository.swift */; };
+		6B1D899B21E73EF700965C80 /* ExerciseRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D899A21E73EF700965C80 /* ExerciseRepositoryImp.swift */; };
 		6BA0F07C21C13CD40018B300 /* AddTrainingTabelViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0F07B21C13CD40018B300 /* AddTrainingTabelViewAdapter.swift */; };
 		6BA0F07F21C13FC10018B300 /* BaseTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0F07E21C13FC10018B300 /* BaseTableViewAdapter.swift */; };
 		6BA0F08521C24B250018B300 /* CalendarApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0F08321C24B250018B300 /* CalendarApp.xcdatamodeld */; };
@@ -135,6 +137,8 @@
 		6B121C0421847BC3008CFDCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B121C0621847BC3008CFDCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B1D899621E73D8000965C80 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		6B1D899821E73EE400965C80 /* ExerciseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseRepository.swift; sourceTree = "<group>"; };
+		6B1D899A21E73EF700965C80 /* ExerciseRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseRepositoryImp.swift; sourceTree = "<group>"; };
 		6BA0F07B21C13CD40018B300 /* AddTrainingTabelViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrainingTabelViewAdapter.swift; sourceTree = "<group>"; };
 		6BA0F07E21C13FC10018B300 /* BaseTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewAdapter.swift; sourceTree = "<group>"; };
 		6BA0F08421C24B250018B300 /* CalendarApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CalendarApp.xcdatamodel; sourceTree = "<group>"; };
@@ -473,6 +477,8 @@
 				6BA0F08621C261000018B300 /* CoreDataStore.swift */,
 				6BA0F08821C261450018B300 /* CoreDataRepository.swift */,
 				6BA0F08A21C261A90018B300 /* CoreDataRepositoryImp.swift */,
+				6B1D899821E73EE400965C80 /* ExerciseRepository.swift */,
+				6B1D899A21E73EF700965C80 /* ExerciseRepositoryImp.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -942,6 +948,7 @@
 				6BB792F621BF913F008C92D8 /* ShowErrorRouterInput.swift in Sources */,
 				6BB7930A21BF92BC008C92D8 /* DayOfWeek.swift in Sources */,
 				8F312207882A1CAA6CC35736 /* CalendarInteractorOutput.swift in Sources */,
+				6B1D899B21E73EF700965C80 /* ExerciseRepositoryImp.swift in Sources */,
 				44E78CF33C99D6AC3D497BA4 /* CalendarInteractor.swift in Sources */,
 				474D8DCEB736ED63CE861C94 /* CalendarRouterInput.swift in Sources */,
 				98B6D7D6741B7A203783B5F9 /* CalendarRouter.swift in Sources */,
@@ -956,6 +963,7 @@
 				6BB792ED21BF913F008C92D8 /* URLPathConvertable.swift in Sources */,
 				761EA98F8B054737F41E6B38 /* DayViewController.swift in Sources */,
 				6B1D899721E73D8000965C80 /* Exercise.swift in Sources */,
+				6B1D899921E73EE400965C80 /* ExerciseRepository.swift in Sources */,
 				DB2A074E67600C9C4407CBBA /* DayModuleInput.swift in Sources */,
 				6BB792EC21BF913F008C92D8 /* LoadableViewInput.swift in Sources */,
 				6BB7930821BF92BC008C92D8 /* NetworkServiceError.swift in Sources */,

@@ -11,23 +11,22 @@ import Foundation
 class DayInteractor: NSObject, DayInteractorInput {
 
     weak var output: DayInteractorOutput!
-    var coreDataRepository: CoreDataRepository!
+    var exerciseRepository: ExerciseRepository!
     
     func add(exercise: String, date: Date) {
-        let context = coreDataStore.persistentContainer.viewContext
-        let exerciseEntity = ExerciseEntity(context: context)
+        var exerciseEntity = Exercise()
         exerciseEntity.date = date
         exerciseEntity.exercise = exercise
-        coreDataRepository.add(exercise: exerciseEntity)
+        exerciseRepository.add(exercise: exerciseEntity)
     }
     
     func getExecises(date: Date) -> [String] {
-        let exercises = coreDataRepository.getExercises(date: date).compactMap { $0.exercise }
+        let exercises = exerciseRepository.getExercises(date: date).compactMap { $0.exercise }
         return exercises
     }
     
     func getExecisesEntity(date: Date) -> [String] {
-        let exercises = coreDataRepository.getExercises(date: date).compactMap { $0.exercise }
+        let exercises = exerciseRepository.getExercises(date: date).compactMap { $0.exercise }
         return exercises
     }
     

@@ -44,7 +44,7 @@ let dayAssembly = DependencyContainer { container in
         .resolvingProperties { container, item in
 	        let interactor = item as! DayInteractor
             interactor.output = try! container.resolve()
-            interactor.coreDataRepository = CoreDataRepositoryImp()
+            interactor.exerciseRepository = ExerciseRepositoryImp()
     }
     
     container.register(.shared) { DayRouter() as DayRouterInput }
