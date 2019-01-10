@@ -6,7 +6,9 @@
 //  Copyright © 2018 High Technologies Center. All rights reserved.
 //
 
+import Foundation
+
 protocol CalendarRouterInput: class {
 
-    func openEditDateModule()
+    func openEditDateModule(date: Date)
 }

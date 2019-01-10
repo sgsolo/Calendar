@@ -17,8 +17,10 @@ class CoreDataRepositoryImp: CoreDataRepository {
         coreDataStore.saveContext()
     }
     
-    func getExercises() -> [ExerciseEntity] {
+    func getExercises(date: Date) -> [ExerciseEntity] {
+        let predicate = NSPredicate(format: "date = %@", date as CVarArg)
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: ExerciseEntity.self))
+        request.predicate = predicate
         if let exercises = try? context.fetch(request) as? [ExerciseEntity] {
             return exercises ?? []
         }

@@ -25,6 +25,10 @@ class CalendarViewController: BaseViewController, CalendarViewInput {
         adapter.collectionView = calendarView
     }
     
+    func setNavigationBarHidden(_ hidden: Bool, animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(hidden, animated: animated)
+    }
+    
     @IBAction func prevButtonTap(_ sender: Any) {
         adapter.scrollToSegment(.previous)
     }

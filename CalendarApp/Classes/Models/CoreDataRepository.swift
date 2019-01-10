@@ -11,6 +11,6 @@ import Foundation
 protocol CoreDataRepository: class {
     
     func add(exercise: ExerciseEntity)
-    func getExercises() -> [ExerciseEntity]
+    func getExercises(date: Date) -> [ExerciseEntity]
     func update(exercises: [ExerciseEntity])
 }

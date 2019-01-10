@@ -8,4 +8,6 @@
 
 protocol DayViewInput: class {
 
+    func updateData()
+    func setTitle(_ title: String)
 }

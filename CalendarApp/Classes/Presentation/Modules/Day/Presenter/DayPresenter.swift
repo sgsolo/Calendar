@@ -13,12 +13,26 @@ class DayPresenter: NSObject, DayModuleInput, DayInteractorOutput {
     weak var view: DayViewInput!
     var interactor: DayInteractorInput!
     var router: DayRouterInput!
+    
+    var date: Date!
+    
+    func setDate(_ date: Date) {
+        self.date = date
+    }
+    
+    func viewWillAppear() {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd" 
+        let dateString = dateFormatter.string(from: date)
+        view.setTitle(dateString)
+        view.updateData()
+    }
 }
 
 extension DayPresenter: DayViewOutput {
     
     func getExercises() -> [SectionData] {
-        return getSectionData(objects: interactor.getExecises())
+        return getSectionData(objects: interactor.getExecises(date: date))
     }
     
     private func getSectionData(objects: [Any]) -> [SectionData] {
@@ -37,6 +51,6 @@ extension DayPresenter: DayViewOutput {
 extension DayPresenter: AddTrainingModuleDelegate {
     
     func didSelect(exercise: String) {
-        interactor.add(exercise: exercise)
+        interactor.add(exercise: exercise, date: date)
     }
 }

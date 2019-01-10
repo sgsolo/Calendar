@@ -14,9 +14,10 @@ final class CalendarRouter: BaseRouter, CalendarRouterInput {
 
 extension CalendarRouter {
     
-    func openEditDateModule() {
+    func openEditDateModule(date: Date) {
         let storyboard = try! dayAssembly.resolve() as UIStoryboard
         guard let destinationViewController = storyboard.instantiateViewController(withIdentifier: "DayViewController") as? DayViewController else { return }
+        (destinationViewController.moduleInput as? DayModuleInput)?.setDate(date)
         
         self.transitionHandler.navigationController?.pushViewController(destinationViewController, animated: true)
         

@@ -6,6 +6,9 @@
 //  Copyright © 2018 High Technologies Center. All rights reserved.
 //
 
+import Foundation
+
 protocol DayModuleInput: class {
 
+    func setDate(_ date: Date)
 }

@@ -6,8 +6,10 @@
 //  Copyright © 2018 High Technologies Center. All rights reserved.
 //
 
+import Foundation
+
 protocol DayInteractorInput: class {
 
-    func add(exercise: String)
-    func getExecises() -> [String]
+    func add(exercise: String, date: Date)
+    func getExecises(date: Date) -> [String]
 }

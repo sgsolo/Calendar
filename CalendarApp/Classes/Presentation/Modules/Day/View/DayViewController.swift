@@ -22,12 +22,19 @@ class DayViewController: BaseViewController, DayViewInput {
         configureNavigationBar()
         
         adapter.tableView = tableView
-        adapter.updateData(with: output.getExercises())
     }
     
     func configureNavigationBar() {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(didTapNavigationItem))
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "add new", style: UIBarButtonItem.Style.done, target: self, action: #selector(didTapNewItem))
+    }
+    
+    func updateData() {
+        adapter.updateData(with: output.getExercises())
+    }
+    
+    func setTitle(_ title: String) {
+        self.title = title
     }
     
     //MARK: Actions

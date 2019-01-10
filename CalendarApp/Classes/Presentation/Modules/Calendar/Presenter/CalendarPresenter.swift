@@ -13,11 +13,19 @@ class CalendarPresenter: NSObject, CalendarModuleInput, CalendarViewOutput, Cale
     weak var view: CalendarViewInput!
     var interactor: CalendarInteractorInput!
     var router: CalendarRouterInput!
+    
+    func viewWillAppear() {
+        view.setNavigationBarHidden(true, animated: true)
+    }
+    
+    func viewWillDisappear() {
+        view.setNavigationBarHidden(false, animated: true)
+    }
 }
 
 extension CalendarPresenter  {
     
     func didCalendarTap(date: Date) {
-        router.openEditDateModule()
+        router.openEditDateModule(date: date)
     }
 }
