@@ -8,5 +8,5 @@
 
 protocol ExerciseRouterInput: class {
 
-    func openEditExerciseModule()
+    func openEditExerciseViewController(exercise: Exercise, delegate: EditExerciseModuleDelegate)
 }

@@ -8,4 +8,5 @@
 
 protocol ExerciseInteractorInput: class {
 
+    func update(exercise: Exercise) -> Exercise?
 }

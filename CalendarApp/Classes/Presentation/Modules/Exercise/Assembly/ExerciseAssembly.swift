@@ -25,6 +25,7 @@ let exerciseAssembly = DependencyContainer { container in
         .resolvingProperties { container, view in
             view.output = try! container.resolve()
             view.moduleInput = view.output as? ExerciseModuleInput
+            view.adapter = ExerciseTableViewAdapter()
     }
     
     container.register(.shared) { ExercisePresenter() as ExerciseModuleInput }
@@ -41,6 +42,7 @@ let exerciseAssembly = DependencyContainer { container in
         .resolvingProperties { container, item in
 	        let interactor = item as! ExerciseInteractor
             interactor.output = try! container.resolve()
+            interactor.exerciseRepository = ExerciseRepositoryImp()
     }
     
     container.register(.shared) { ExerciseRouter() as ExerciseRouterInput }

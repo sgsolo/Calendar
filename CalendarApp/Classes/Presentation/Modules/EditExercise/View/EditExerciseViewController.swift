@@ -8,14 +8,23 @@
 
 import UIKit
 
-class EditExerciseViewController: UIViewController, EditExerciseViewInput {
+class EditExerciseViewController: BaseViewController, EditExerciseViewInput {
 
     var output: EditExerciseViewOutput!
-    var moduleInput: EditExerciseModuleInput!
 
+    @IBOutlet weak var quantityTextField: UITextField!
+    @IBOutlet weak var extraWeightTextField: UITextField!
+    
     // MARK: Lifecycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func setupView() {
+        super.setupView()
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(saveBarButtonItem))
+    }
+    
+    @objc func saveBarButtonItem(sender: UIBarButtonItem) {
+        if let quantity = quantityTextField.text, let extraWeight = extraWeightTextField.text {
+            output.save(quantity: quantity, extraWeight: extraWeight)
+        }
     }
 }

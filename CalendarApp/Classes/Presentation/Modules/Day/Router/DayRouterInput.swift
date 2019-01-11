@@ -6,9 +6,8 @@
 //  Copyright © 2018 High Technologies Center. All rights reserved.
 //
 
-protocol DayRouterInput: class {
+protocol DayRouterInput: BaseRouterInput {
 
-    func popViewController()
     func openAddTrainingViewController()
-    func openExerciseViewController()
+    func openExerciseViewController(exercise: Exercise)
 }

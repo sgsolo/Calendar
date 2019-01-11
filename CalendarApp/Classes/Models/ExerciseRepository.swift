@@ -6,11 +6,12 @@
 //  Copyright © 2019 Григорий Соловьев. All rights reserved.
 //
 
-import Foundation
+import CoreData
 
 protocol ExerciseRepository: class {
     
-    func add(exercise: Exercise)
+    func add(exercise: String, date: Date)
     func getExercises(date: Date) -> [Exercise]
-    func update(exercises: [Exercise])
+    func getExercises(managedObjectID: NSManagedObjectID) -> Exercise?
+    func update(exercise: Exercise)
 }

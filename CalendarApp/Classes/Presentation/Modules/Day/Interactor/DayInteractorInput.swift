@@ -11,5 +11,5 @@ import Foundation
 protocol DayInteractorInput: class {
 
     func add(exercise: String, date: Date)
-    func getExecises(date: Date) -> [String]
+    func getExecises(date: Date) -> [Exercise]
 }

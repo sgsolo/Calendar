@@ -18,10 +18,10 @@ final class DayRouter: BaseRouter, DayRouterInput {
         self.transitionHandler.navigationController?.pushViewController(destinationViewController, animated: true)
     }
     
-    func openExerciseViewController() {
+    func openExerciseViewController(exercise: Exercise) {
         let storyboard = try! exerciseAssembly.resolve() as UIStoryboard
         guard let destinationViewController = storyboard.instantiateViewController(withIdentifier: "ExerciseViewController") as? ExerciseViewController else { return }
-//        (destinationViewController.moduleInput as? AddTrainingModuleInput)?.delegate = self.trainingDelegate
+        (destinationViewController.moduleInput as? ExerciseModuleInput)?.exercise = exercise
         
         self.transitionHandler.navigationController?.pushViewController(destinationViewController, animated: true)
     }

@@ -21,8 +21,8 @@ class DayTabelViewCell: UITableViewCell {}
 extension DayTabelViewCell: RegistrableComponent, ConfigurableComponent {
     
     func configure(with object: Any) {
-        if let object = object as? String {
-            self.textLabel?.text = object
+        if let object = object as? Exercise {
+            self.textLabel?.text = object.exercise
         }
     }
 }

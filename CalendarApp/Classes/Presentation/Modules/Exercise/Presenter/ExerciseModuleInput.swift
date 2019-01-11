@@ -8,4 +8,5 @@
 
 protocol ExerciseModuleInput: class {
 
+    var exercise: Exercise! { get set }
 }

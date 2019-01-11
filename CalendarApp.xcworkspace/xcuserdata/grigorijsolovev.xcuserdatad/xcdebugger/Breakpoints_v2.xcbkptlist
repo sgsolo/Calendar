@@ -148,7 +148,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CalendarApp/Classes/Presentation/Modules/Day/Assembly/DayAssembly.swift"
-            timestampString = "568804296.9759279"
+            timestampString = "568809688.878991"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
@@ -180,7 +180,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CalendarApp/Classes/Common/CollectionViewAdapters/BaseCollectionViewAdapter.swift"
-            timestampString = "566402752.628068"
+            timestampString = "568806943.173767"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "176"
@@ -196,7 +196,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CalendarApp/Classes/Common/CollectionViewAdapters/BaseCollectionViewAdapter.swift"
-            timestampString = "566402752.628153"
+            timestampString = "568806943.173894"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "134"
@@ -244,7 +244,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CalendarApp/Classes/Presentation/Modules/Day/Presenter/DayPresenter.swift"
-            timestampString = "568804296.976306"
+            timestampString = "568898910.922788"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
@@ -256,16 +256,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalendarApp/Classes/Presentation/Modules/Exercise/Presenter/ExercisePresenter.swift"
+            timestampString = "568900158.9394979"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "ExercisePresenter"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CalendarApp/Classes/Presentation/Modules/Day/Presenter/DayPresenter.swift"
-            timestampString = "568804296.976401"
+            filePath = "CalendarApp/Classes/Presentation/Modules/Exercise/Presenter/ExercisePresenter.swift"
+            timestampString = "568900158.940868"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "didSelect(exercise:)"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "getApproaches()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalendarApp/Classes/Presentation/Modules/Exercise/Presenter/ExercisePresenter.swift"
+            timestampString = "568900158.940946"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "reloadData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

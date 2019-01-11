@@ -13,5 +13,5 @@ protocol AddTrainingModuleDelegate: class {
 
 protocol AddTrainingModuleInput: class {
 
-    var delegate: AddTrainingModuleDelegate? { get set}
+    var delegate: AddTrainingModuleDelegate? { get set }
 }

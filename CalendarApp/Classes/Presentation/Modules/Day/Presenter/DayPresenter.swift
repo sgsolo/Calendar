@@ -48,7 +48,10 @@ extension DayPresenter: DayViewOutput {
     }
     
     func didSelectExercise(index: Int) {
-        router.openExerciseViewController()
+        let execises = interactor.getExecises(date: date)
+        if index < execises.count {
+            router.openExerciseViewController(exercise: execises[index])
+        }
     }
 }
 

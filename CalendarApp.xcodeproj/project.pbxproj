@@ -38,6 +38,10 @@
 		6B1D899721E73D8000965C80 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D899621E73D8000965C80 /* Exercise.swift */; };
 		6B1D899921E73EE400965C80 /* ExerciseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D899821E73EE400965C80 /* ExerciseRepository.swift */; };
 		6B1D899B21E73EF700965C80 /* ExerciseRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D899A21E73EF700965C80 /* ExerciseRepositoryImp.swift */; };
+		6B1D899E21E7484700965C80 /* ExerciseTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D899D21E7484700965C80 /* ExerciseTableViewAdapter.swift */; };
+		6B1D89A021E74C8D00965C80 /* Approach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D899F21E74C8D00965C80 /* Approach.swift */; };
+		6B1D89AD21E7526A00965C80 /* ExerciseTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D89AC21E7526A00965C80 /* ExerciseTabelViewCell.swift */; };
+		6B1D89AF21E7528700965C80 /* ExerciseTabelViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1D89AE21E7528700965C80 /* ExerciseTabelViewCell.xib */; };
 		6BA0F07C21C13CD40018B300 /* AddTrainingTabelViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0F07B21C13CD40018B300 /* AddTrainingTabelViewAdapter.swift */; };
 		6BA0F07F21C13FC10018B300 /* BaseTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0F07E21C13FC10018B300 /* BaseTableViewAdapter.swift */; };
 		6BA0F08521C24B250018B300 /* CalendarApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0F08321C24B250018B300 /* CalendarApp.xcdatamodeld */; };
@@ -139,6 +143,10 @@
 		6B1D899621E73D8000965C80 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		6B1D899821E73EE400965C80 /* ExerciseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseRepository.swift; sourceTree = "<group>"; };
 		6B1D899A21E73EF700965C80 /* ExerciseRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseRepositoryImp.swift; sourceTree = "<group>"; };
+		6B1D899D21E7484700965C80 /* ExerciseTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewAdapter.swift; sourceTree = "<group>"; };
+		6B1D899F21E74C8D00965C80 /* Approach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Approach.swift; sourceTree = "<group>"; };
+		6B1D89AC21E7526A00965C80 /* ExerciseTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTabelViewCell.swift; sourceTree = "<group>"; };
+		6B1D89AE21E7528700965C80 /* ExerciseTabelViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseTabelViewCell.xib; sourceTree = "<group>"; };
 		6BA0F07B21C13CD40018B300 /* AddTrainingTabelViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrainingTabelViewAdapter.swift; sourceTree = "<group>"; };
 		6BA0F07E21C13FC10018B300 /* BaseTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewAdapter.swift; sourceTree = "<group>"; };
 		6BA0F08421C24B250018B300 /* CalendarApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CalendarApp.xcdatamodel; sourceTree = "<group>"; };
@@ -260,7 +268,6 @@
 		231D13144899EB71D7F9D9DE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6BA0F08021C14BAE0018B300 /* Cells */,
 				6BA0F07A21C13C810018B300 /* Adapters */,
 				653F43DA6271F609C55CD2C8 /* AddTrainingViewInput.swift */,
 				A903ECB4A4CAF07B50382341 /* AddTrainingViewOutput.swift */,
@@ -443,8 +450,26 @@
 			isa = PBXGroup;
 			children = (
 				6B1D899621E73D8000965C80 /* Exercise.swift */,
+				6B1D899F21E74C8D00965C80 /* Approach.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		6B1D899C21E7481400965C80 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				6B1D899D21E7484700965C80 /* ExerciseTableViewAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		6B1D89AB21E7522D00965C80 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6B1D89AC21E7526A00965C80 /* ExerciseTabelViewCell.swift */,
+				6B1D89AE21E7528700965C80 /* ExerciseTabelViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		6BA0F07A21C13C810018B300 /* Adapters */ = {
@@ -461,13 +486,6 @@
 				6BA0F07E21C13FC10018B300 /* BaseTableViewAdapter.swift */,
 			);
 			path = TableViewAdapter;
-			sourceTree = "<group>";
-		};
-		6BA0F08021C14BAE0018B300 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		6BA0F08221C24AEB0018B300 /* Models */ = {
@@ -638,6 +656,8 @@
 		7A3BF688D1B15D9F4C34A4C9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6B1D89AB21E7522D00965C80 /* Cells */,
+				6B1D899C21E7481400965C80 /* Adapters */,
 				C57CA45506DE31EF84F926DE /* ExerciseViewInput.swift */,
 				CDA8EAAD2AC143245AD0CBAB /* ExerciseViewOutput.swift */,
 				CF92232C3C330B154B187AD1 /* ExerciseViewController.swift */,
@@ -867,6 +887,7 @@
 			files = (
 				6B121C0521847BC3008CFDCD /* LaunchScreen.storyboard in Resources */,
 				6B121C0221847BC3008CFDCD /* Assets.xcassets in Resources */,
+				6B1D89AF21E7528700965C80 /* ExerciseTabelViewCell.xib in Resources */,
 				6B121C0021847BC1008CFDCD /* Main.storyboard in Resources */,
 				6BA1DF8421BE676300E1D56C /* CalendarCell.xib in Resources */,
 			);
@@ -948,6 +969,7 @@
 				6BB792F621BF913F008C92D8 /* ShowErrorRouterInput.swift in Sources */,
 				6BB7930A21BF92BC008C92D8 /* DayOfWeek.swift in Sources */,
 				8F312207882A1CAA6CC35736 /* CalendarInteractorOutput.swift in Sources */,
+				6B1D899E21E7484700965C80 /* ExerciseTableViewAdapter.swift in Sources */,
 				6B1D899B21E73EF700965C80 /* ExerciseRepositoryImp.swift in Sources */,
 				44E78CF33C99D6AC3D497BA4 /* CalendarInteractor.swift in Sources */,
 				474D8DCEB736ED63CE861C94 /* CalendarRouterInput.swift in Sources */,
@@ -964,6 +986,7 @@
 				761EA98F8B054737F41E6B38 /* DayViewController.swift in Sources */,
 				6B1D899721E73D8000965C80 /* Exercise.swift in Sources */,
 				6B1D899921E73EE400965C80 /* ExerciseRepository.swift in Sources */,
+				6B1D89AD21E7526A00965C80 /* ExerciseTabelViewCell.swift in Sources */,
 				DB2A074E67600C9C4407CBBA /* DayModuleInput.swift in Sources */,
 				6BB792EC21BF913F008C92D8 /* LoadableViewInput.swift in Sources */,
 				6BB7930821BF92BC008C92D8 /* NetworkServiceError.swift in Sources */,
@@ -972,6 +995,7 @@
 				6BB792D221BF90EC008C92D8 /* BaseCollectionViewAdapter.swift in Sources */,
 				6BB792BF21BEAA03008C92D8 /* ViewLifecycleObserver.swift in Sources */,
 				6BB792F921BF913F008C92D8 /* URLConvertable.swift in Sources */,
+				6B1D89A021E74C8D00965C80 /* Approach.swift in Sources */,
 				6BB7930F21BF92BC008C92D8 /* RegistrableSource.swift in Sources */,
 				69BF0281F8CD124CFF3BA826 /* DayPresenter.swift in Sources */,
 				6BB792F521BF913F008C92D8 /* ConfigurableComponent.swift in Sources */,

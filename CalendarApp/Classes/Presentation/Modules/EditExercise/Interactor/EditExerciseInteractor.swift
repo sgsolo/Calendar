@@ -11,4 +11,9 @@ import Foundation
 class EditExerciseInteractor: NSObject, EditExerciseInteractorInput {
 
     weak var output: EditExerciseInteractorOutput!
+    var exerciseServise: ExerciseRepository!
+    
+    func save(exercise: Exercise) {
+        exerciseServise.update(exercise: exercise)
+    }
 }

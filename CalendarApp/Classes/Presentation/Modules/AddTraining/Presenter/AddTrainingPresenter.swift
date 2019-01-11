@@ -16,8 +16,8 @@ class AddTrainingPresenter: NSObject, AddTrainingModuleInput, AddTrainingViewOut
     
     weak var delegate: AddTrainingModuleDelegate?
     let exercises = ["Подтягивания",
-                   "Отжимания",
-                   "Брусья"]
+                     "Отжимания",
+                     "Брусья"]
     
     func getExercises() -> [SectionData] {
         return getSectionData(objects: exercises)

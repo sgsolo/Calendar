@@ -41,6 +41,7 @@ let editExerciseAssembly = DependencyContainer { container in
         .resolvingProperties { container, item in
 	        let interactor = item as! EditExerciseInteractor
             interactor.output = try! container.resolve()
+            interactor.exerciseServise = ExerciseRepositoryImp()
     }
     
     container.register(.shared) { EditExerciseRouter() as EditExerciseRouterInput }

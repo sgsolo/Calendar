@@ -319,12 +319,56 @@
                     <view key="view" contentMode="scaleToFill" id="AD9-9b-fcv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cca-jK-FOF">
+                                <rect key="frame" x="16" y="100" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Og5-WV-9jF">
+                                <rect key="frame" x="16" y="170" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество подходов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXb-6t-FJA">
+                                <rect key="frame" x="16" y="71" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дополнительный вес" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9B-TX-o1D">
+                                <rect key="frame" x="16" y="141" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Og5-WV-9jF" firstAttribute="top" secondItem="i9B-TX-o1D" secondAttribute="bottom" constant="8" id="1X3-Je-vkW"/>
+                            <constraint firstItem="Og5-WV-9jF" firstAttribute="leading" secondItem="MUj-jJ-XUK" secondAttribute="leading" constant="16" id="5ro-dZ-5r2"/>
+                            <constraint firstItem="cca-jK-FOF" firstAttribute="top" secondItem="rXb-6t-FJA" secondAttribute="bottom" constant="8" id="C3J-cA-oPE"/>
+                            <constraint firstItem="MUj-jJ-XUK" firstAttribute="trailing" secondItem="rXb-6t-FJA" secondAttribute="trailing" constant="16" id="DTO-L8-LPd"/>
+                            <constraint firstItem="MUj-jJ-XUK" firstAttribute="trailing" secondItem="Og5-WV-9jF" secondAttribute="trailing" constant="16" id="IzM-o6-wMM"/>
+                            <constraint firstItem="cca-jK-FOF" firstAttribute="top" secondItem="MUj-jJ-XUK" secondAttribute="top" constant="80" id="O3f-hz-Bw0"/>
+                            <constraint firstItem="i9B-TX-o1D" firstAttribute="leading" secondItem="MUj-jJ-XUK" secondAttribute="leading" constant="16" id="ZYQ-D3-zlO"/>
+                            <constraint firstItem="MUj-jJ-XUK" firstAttribute="trailing" secondItem="cca-jK-FOF" secondAttribute="trailing" constant="16" id="aWO-lE-dKA"/>
+                            <constraint firstItem="rXb-6t-FJA" firstAttribute="leading" secondItem="MUj-jJ-XUK" secondAttribute="leading" constant="16" id="g6y-kq-6XG"/>
+                            <constraint firstItem="cca-jK-FOF" firstAttribute="leading" secondItem="MUj-jJ-XUK" secondAttribute="leading" constant="16" id="hlF-K3-nUp"/>
+                            <constraint firstItem="MUj-jJ-XUK" firstAttribute="trailing" secondItem="i9B-TX-o1D" secondAttribute="trailing" constant="16" id="i4N-KJ-4qZ"/>
+                            <constraint firstItem="Og5-WV-9jF" firstAttribute="top" secondItem="cca-jK-FOF" secondAttribute="bottom" constant="40" id="oq4-uZ-Io3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MUj-jJ-XUK"/>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="dipTag" value="EditExerciseViewController"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="extraWeightTextField" destination="Og5-WV-9jF" id="R8q-rP-8gV"/>
+                        <outlet property="quantityTextField" destination="cca-jK-FOF" id="BbH-4a-iXx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cC-SR-4Bs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

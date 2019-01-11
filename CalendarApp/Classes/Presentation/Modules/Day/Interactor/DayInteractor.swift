@@ -14,20 +14,11 @@ class DayInteractor: NSObject, DayInteractorInput {
     var exerciseRepository: ExerciseRepository!
     
     func add(exercise: String, date: Date) {
-        var exerciseEntity = Exercise()
-        exerciseEntity.date = date
-        exerciseEntity.exercise = exercise
-        exerciseRepository.add(exercise: exerciseEntity)
+        exerciseRepository.add(exercise: exercise, date: date)
     }
     
-    func getExecises(date: Date) -> [String] {
-        let exercises = exerciseRepository.getExercises(date: date).compactMap { $0.exercise }
-        return exercises
-    }
-    
-    func getExecisesEntity(date: Date) -> [String] {
-        let exercises = exerciseRepository.getExercises(date: date).compactMap { $0.exercise }
-        return exercises
+    func getExecises(date: Date) -> [Exercise] {
+        return exerciseRepository.getExercises(date: date)
     }
     
 }

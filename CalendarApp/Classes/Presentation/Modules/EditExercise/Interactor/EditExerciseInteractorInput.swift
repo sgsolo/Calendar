@@ -8,4 +8,5 @@
 
 protocol EditExerciseInteractorInput: class {
 
+    func save(exercise: Exercise)
 }

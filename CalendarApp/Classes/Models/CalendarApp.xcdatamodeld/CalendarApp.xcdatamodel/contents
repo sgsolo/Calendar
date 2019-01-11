@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="ApproachEntity" representedClassName="ApproachEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="addedDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="extraWeight" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="exercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ExerciseEntity" inverseName="approach" inverseEntity="ExerciseEntity" syncable="YES"/>
     </entity>
     <entity name="BaseEntity" representedClassName="BaseEntity" isAbstract="YES" syncable="YES" codeGenerationType="class">
@@ -12,7 +15,7 @@
         <relationship name="approach" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ApproachEntity" inverseName="exercise" inverseEntity="ApproachEntity" syncable="YES"/>
     </entity>
     <elements>
-        <element name="ApproachEntity" positionX="155.8515625" positionY="-1423.0703125" width="128" height="60"/>
+        <element name="ApproachEntity" positionX="157.6484375" positionY="-1453.2734375" width="128" height="103"/>
         <element name="BaseEntity" positionX="-152.70703125" positionY="-1637.109375" width="128" height="73"/>
         <element name="ExerciseEntity" positionX="-153.140625" positionY="-1438.40234375" width="128" height="75"/>
     </elements>

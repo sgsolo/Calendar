@@ -11,4 +11,9 @@ import Foundation
 class ExerciseInteractor: NSObject, ExerciseInteractorInput {
 
     weak var output: ExerciseInteractorOutput!
+    var  exerciseRepository: ExerciseRepository!
+    
+    func update(exercise: Exercise) -> Exercise? {
+        return exerciseRepository.getExercises(managedObjectID: exercise.managedObjectID)
+    }
 }

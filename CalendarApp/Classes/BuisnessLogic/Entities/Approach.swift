@@ -1,17 +1,16 @@
 //
-//  Exercise.swift
+//  Approach.swift
 //  CalendarApp
 //
 //  Created by Григорий Соловьев on 10/01/2019.
 //  Copyright © 2019 Григорий Соловьев. All rights reserved.
 //
 
-import CoreData
+import Foundation
 
-struct Exercise {
+struct Approach: Hashable {
     
-    var managedObjectID: NSManagedObjectID
-    var date: Date?
-    var exercise: String?
-    var approach: [Approach]?
+    var addedDate: Date?
+    var quantity: Int?
+    var extraWeight: Int?
 }

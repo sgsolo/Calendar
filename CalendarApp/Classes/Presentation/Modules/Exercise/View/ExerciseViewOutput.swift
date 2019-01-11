@@ -9,4 +9,5 @@
 protocol ExerciseViewOutput: class {
 
     func didTapAddButton()
+    func getApproaches() -> [Approach]
 }
