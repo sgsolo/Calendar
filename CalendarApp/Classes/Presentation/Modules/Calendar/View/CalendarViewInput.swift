@@ -9,4 +9,5 @@
 protocol CalendarViewInput: class {
 
     func setNavigationBarHidden(_ hidden: Bool, animated: Bool)
+    func reloadData()
 }

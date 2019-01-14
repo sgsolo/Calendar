@@ -16,6 +16,7 @@ class CalendarPresenter: NSObject, CalendarModuleInput, CalendarViewOutput, Cale
     
     func viewWillAppear() {
         view.setNavigationBarHidden(true, animated: true)
+        view.reloadData()
     }
     
     func viewWillDisappear() {

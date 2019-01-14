@@ -11,20 +11,31 @@ import JTAppleCalendar
 final class CalendarCell: JTAppleCell {
 
     @IBOutlet var dayLabel: UILabel!
-    @IBOutlet var selectedView: UIView!
-    @IBOutlet var meetingDayMarkView: UIView!
+    @IBOutlet weak var greenCheckMarkImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.selectedView.isHidden = true
-        self.selectedView.layer.cornerRadius = self.selectedView.bounds.width / 2
-        
-        self.meetingDayMarkView.isHidden = true
-        self.meetingDayMarkView.layer.borderColor = UIColor.darkGray.cgColor
-        self.meetingDayMarkView.layer.borderWidth = 1
-        self.meetingDayMarkView.layer.cornerRadius = self.meetingDayMarkView.bounds.width / 2
     }
 }
 
-extension CalendarCell: RegistrableComponent {}
+extension CalendarCell: RegistrableComponent, ConfigurableComponent {
+    
+    func configure(with object: Any) {
+        if let object = object as? CalendarCellModel {
+            if object.cellState.dateBelongsTo == .thisMonth {
+                dayLabel.textColor = .black
+            } else {
+                dayLabel.textColor = .gray
+            }
+            dayLabel.text = object.text
+            greenCheckMarkImageView.isHidden = !object.needGreenCheckMark
+        }
+    }
+}
+
+struct CalendarCellModel {
+    let text: String
+    let cellState: CellState
+    let needGreenCheckMark: Bool
+}

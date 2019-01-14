@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,44 +16,37 @@
             <rect key="frame" x="0.0" y="0.0" width="195" height="164"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukw-gp-hY6">
-                    <rect key="frame" x="81.5" y="66" width="32" height="32"/>
-                    <color key="backgroundColor" red="0.0" green="0.56862745098039214" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="32" id="74y-Ew-Rkx"/>
-                        <constraint firstAttribute="width" secondItem="ukw-gp-hY6" secondAttribute="height" multiplier="1:1" id="GOb-om-3Bz"/>
-                    </constraints>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBg-wa-8sV">
-                    <rect key="frame" x="81.5" y="66" width="32" height="32"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuA-bf-2w5">
                     <rect key="frame" x="92.5" y="73" width="10" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenCheckMark" translatesAutoresizingMaskIntoConstraints="NO" id="2XY-vD-qsb">
+                    <rect key="frame" x="92" y="91.5" width="11" height="11"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="11" id="POC-Hj-Lxx"/>
+                        <constraint firstAttribute="width" constant="11" id="pT7-2C-fFl"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="ukw-gp-hY6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0iE-Tg-BYp"/>
-                <constraint firstItem="ukw-gp-hY6" firstAttribute="trailing" secondItem="fBg-wa-8sV" secondAttribute="trailing" id="8Hh-1o-LZk"/>
                 <constraint firstItem="YuA-bf-2w5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DED-De-7hq"/>
-                <constraint firstItem="ukw-gp-hY6" firstAttribute="leading" secondItem="fBg-wa-8sV" secondAttribute="leading" id="FAL-11-Xvg"/>
-                <constraint firstItem="ukw-gp-hY6" firstAttribute="top" secondItem="fBg-wa-8sV" secondAttribute="top" id="J88-QB-iIZ"/>
+                <constraint firstItem="2XY-vD-qsb" firstAttribute="firstBaseline" secondItem="YuA-bf-2w5" secondAttribute="firstBaseline" constant="4" id="LAm-6v-bga"/>
                 <constraint firstItem="YuA-bf-2w5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="MU2-s2-8rr"/>
-                <constraint firstItem="ukw-gp-hY6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="SCT-2Y-gdL"/>
-                <constraint firstItem="ukw-gp-hY6" firstAttribute="bottom" secondItem="fBg-wa-8sV" secondAttribute="bottom" id="rJB-d3-X5M"/>
+                <constraint firstItem="2XY-vD-qsb" firstAttribute="centerX" secondItem="YuA-bf-2w5" secondAttribute="centerX" id="Qlm-p6-6t1"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="dayLabel" destination="YuA-bf-2w5" id="uDC-yq-r23"/>
-                <outlet property="meetingDayMarkView" destination="fBg-wa-8sV" id="GCq-5E-zzS"/>
-                <outlet property="selectedView" destination="ukw-gp-hY6" id="9SH-2X-PDq"/>
+                <outlet property="greenCheckMarkImageView" destination="2XY-vD-qsb" id="JyE-Yl-hYr"/>
             </connections>
-            <point key="canvasLocation" x="-177.5" y="-177"/>
+            <point key="canvasLocation" x="-178.40000000000001" y="-177.21139430284859"/>
         </view>
     </objects>
+    <resources>
+        <image name="GreenCheckMark" width="21" height="21"/>
+    </resources>
 </document>

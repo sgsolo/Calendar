@@ -17,6 +17,7 @@ protocol CalendarCollectionViewAdapterOutput: BaseCollectionViewAdapterOutput {
 protocol CalendarCollectionViewAdapterInput: BaseCollectionViewAdpaterInput {
     
     func scrollToSegment(_ destination: SegmentDestination)
+    func reloadData()
 }
 
 class CalendarCollectionViewAdapter: BaseCollectionViewAdapter {
@@ -62,18 +63,11 @@ extension CalendarCollectionViewAdapter: JTAppleCalendarViewDelegate {
     
     func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
         let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: String(describing: CalendarCell.self), for: indexPath) as! CalendarCell
-        configureCell(cell, cellState: cellState)
-        cell.dayLabel.text = cellState.text
+        let exerciseRepositoryImp = ExerciseRepositoryImp()
+        let exercisesCount = exerciseRepositoryImp.getExercises(date: cellState.date).count
+        let calendarCellModel = CalendarCellModel(text: cellState.text, cellState: cellState, needGreenCheckMark: exercisesCount != 0)
+        cell.configure(with: calendarCellModel)
         return cell
-    }
-    
-    private func configureCell(_ cell: CalendarCell, cellState: CellState) {
-        
-        if cellState.dateBelongsTo == .thisMonth {
-            cell.dayLabel.textColor = .black
-        } else {
-            cell.dayLabel.textColor = .gray
-        }
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
@@ -104,5 +98,9 @@ extension CalendarCollectionViewAdapter: CalendarCollectionViewAdapterInput {
     
     func scrollToSegment(_ destination: SegmentDestination) {
         calendarView?.scrollToSegment(destination)
+    }
+    
+    func reloadData() {
+        calendarView?.reloadData()
     }
 }
