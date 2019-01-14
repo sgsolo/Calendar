@@ -47,7 +47,6 @@ class AddTrainingViewController: BaseViewController, AddTrainingViewInput {
     func updateData() {
         adapter.updateData(with: output.getExercises())
     }
-    
 }
 
 extension AddTrainingViewController: UISearchResultsUpdating {
