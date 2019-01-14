@@ -37,9 +37,16 @@ class AddTrainingPresenter: NSObject, AddTrainingModuleInput, AddTrainingViewOut
     }
     
     func didTapAddTrainingButton() {
+        view.dissmissSearchViewControllerIfNeeded()
         router.showAlert(title: "Добавьте упражнение", actionHandler: { [weak self] text in
             guard let text = text else { return }
-            self?.interactor.addExercise(title: text)
+            do {
+                try self?.interactor.addExercise(title: text)
+            } catch UserDefaultsError.userDefaultsError(let errorMessage) {
+                self?.router.showAlert(config: AlertConfig(title: errorMessage, message: nil, inputPlaceholder: nil, alertStyle: .alert, actions: [AlertAction(title: "OK", style: .default, handler: nil)]))
+            } catch {}
+            
+            
         })
     }
     

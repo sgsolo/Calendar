@@ -9,6 +9,6 @@
 protocol AddTrainingInteractorInput: class {
 
     
-    func addExercise(title: String)
+    func addExercise(title: String) throws
     func getExercises() -> [String]
 }

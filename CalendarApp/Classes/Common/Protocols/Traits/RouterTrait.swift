@@ -48,7 +48,6 @@ struct AlertAction {
     let title: String?
     let style: ActionStyle
     let handler: ((AlertAction) -> Void)?
-    let textFieldHandler: ((String?) -> Void)?
 }
 
 struct AlertConfig {

@@ -47,6 +47,12 @@ class AddTrainingViewController: BaseViewController, AddTrainingViewInput {
     func updateData() {
         adapter.updateData(with: output.getExercises())
     }
+    
+    func dissmissSearchViewControllerIfNeeded() {
+        if let _ = navigationItem.searchController?.isActive {
+            navigationItem.searchController?.dismiss(animated: true, completion: nil)
+        }
+    }
 }
 
 extension AddTrainingViewController: UISearchResultsUpdating {

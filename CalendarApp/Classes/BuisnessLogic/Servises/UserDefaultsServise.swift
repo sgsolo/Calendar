@@ -8,8 +8,12 @@
 
 import Foundation
 
+enum UserDefaultsError: Error {
+    case userDefaultsError(String)
+}
+
 protocol UserDefaultsServise {
     
-    func addExercise(title: String)
+    func addExercise(title: String) throws
     func getExercises() -> [String]
 }

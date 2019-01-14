@@ -9,4 +9,5 @@
 protocol AddTrainingViewInput: class {
 
     func updateData()
+    func dissmissSearchViewControllerIfNeeded()
 }
