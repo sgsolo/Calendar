@@ -11,4 +11,13 @@ import Foundation
 class AddTrainingInteractor: NSObject, AddTrainingInteractorInput {
 
     weak var output: AddTrainingInteractorOutput!
+    var userDefaultsServise: UserDefaultsServise!
+ 
+    func addExercise(title: String) {
+        userDefaultsServise.addExercise(title: title)
+    }
+    
+    func getExercises() -> [String] {
+        return userDefaultsServise.getExercises()
+    }
 }

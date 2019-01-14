@@ -8,6 +8,6 @@
 
 import UIKit
 
-final class AddTrainingRouter: BaseRouter, AddTrainingRouterInput {
+final class AddTrainingRouter: BaseRouter, AddTrainingRouterInput, ShowAlertTrait {
 
 }

@@ -33,7 +33,21 @@ class AddTrainingViewController: BaseViewController, AddTrainingViewInput {
         searchController.dimsBackgroundDuringPresentation = false
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAddTrainingButton))
     }
+    
+    //MARK: Actions
+    
+    @objc func didTapAddTrainingButton() {
+        output.didTapAddTrainingButton()
+    }
+    
+    //MARK: AddTrainingViewInput
+    
+    func updateData() {
+        adapter.updateData(with: output.getExercises())
+    }
+    
 }
 
 extension AddTrainingViewController: UISearchResultsUpdating {

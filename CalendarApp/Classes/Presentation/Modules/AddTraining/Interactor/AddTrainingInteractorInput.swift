@@ -8,4 +8,7 @@
 
 protocol AddTrainingInteractorInput: class {
 
+    
+    func addExercise(title: String)
+    func getExercises() -> [String]
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2018 High Technologies Center. All rights reserved.
 //
 
-protocol DayRouterInput: BaseRouterInput {
+protocol DayRouterInput: RouterTrait {
 
     func openAddTrainingViewController()
     func openExerciseViewController(exercise: Exercise)

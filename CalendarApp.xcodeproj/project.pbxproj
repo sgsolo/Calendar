@@ -42,6 +42,8 @@
 		6B1D89A021E74C8D00965C80 /* Approach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D899F21E74C8D00965C80 /* Approach.swift */; };
 		6B1D89AD21E7526A00965C80 /* ExerciseTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D89AC21E7526A00965C80 /* ExerciseTabelViewCell.swift */; };
 		6B1D89AF21E7528700965C80 /* ExerciseTabelViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1D89AE21E7528700965C80 /* ExerciseTabelViewCell.xib */; };
+		6B70B76821EC5F22005A9702 /* UserDefaultsServise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70B76721EC5F22005A9702 /* UserDefaultsServise.swift */; };
+		6B70B76A21EC5FA9005A9702 /* UserDefaultsServiseImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70B76921EC5FA9005A9702 /* UserDefaultsServiseImp.swift */; };
 		6BA0F07C21C13CD40018B300 /* AddTrainingTabelViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0F07B21C13CD40018B300 /* AddTrainingTabelViewAdapter.swift */; };
 		6BA0F07F21C13FC10018B300 /* BaseTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0F07E21C13FC10018B300 /* BaseTableViewAdapter.swift */; };
 		6BA0F08521C24B250018B300 /* CalendarApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0F08321C24B250018B300 /* CalendarApp.xcdatamodeld */; };
@@ -147,6 +149,8 @@
 		6B1D899F21E74C8D00965C80 /* Approach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Approach.swift; sourceTree = "<group>"; };
 		6B1D89AC21E7526A00965C80 /* ExerciseTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTabelViewCell.swift; sourceTree = "<group>"; };
 		6B1D89AE21E7528700965C80 /* ExerciseTabelViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseTabelViewCell.xib; sourceTree = "<group>"; };
+		6B70B76721EC5F22005A9702 /* UserDefaultsServise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsServise.swift; sourceTree = "<group>"; };
+		6B70B76921EC5FA9005A9702 /* UserDefaultsServiseImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsServiseImp.swift; sourceTree = "<group>"; };
 		6BA0F07B21C13CD40018B300 /* AddTrainingTabelViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrainingTabelViewAdapter.swift; sourceTree = "<group>"; };
 		6BA0F07E21C13FC10018B300 /* BaseTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewAdapter.swift; sourceTree = "<group>"; };
 		6BA0F08421C24B250018B300 /* CalendarApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CalendarApp.xcdatamodel; sourceTree = "<group>"; };
@@ -441,6 +445,7 @@
 		6B1D899421E73CD500965C80 /* BuisnessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				6B70B76621EC5EAA005A9702 /* Servises */,
 				6B1D899521E73D0A00965C80 /* Entities */,
 			);
 			path = BuisnessLogic;
@@ -470,6 +475,15 @@
 				6B1D89AE21E7528700965C80 /* ExerciseTabelViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		6B70B76621EC5EAA005A9702 /* Servises */ = {
+			isa = PBXGroup;
+			children = (
+				6B70B76721EC5F22005A9702 /* UserDefaultsServise.swift */,
+				6B70B76921EC5FA9005A9702 /* UserDefaultsServiseImp.swift */,
+			);
+			path = Servises;
 			sourceTree = "<group>";
 		};
 		6BA0F07A21C13C810018B300 /* Adapters */ = {
@@ -1031,8 +1045,10 @@
 				CF756AB811FE4F4EA66E42EC /* ExerciseViewController.swift in Sources */,
 				8F3EC53DB1D0FE754B5F8333 /* ExerciseModuleInput.swift in Sources */,
 				9811DE57916BADB2A27BB15C /* ExercisePresenter.swift in Sources */,
+				6B70B76A21EC5FA9005A9702 /* UserDefaultsServiseImp.swift in Sources */,
 				C3126A4A0A086459FF48FA9E /* ExerciseInteractorInput.swift in Sources */,
 				5500B124196DF1287FA02627 /* ExerciseInteractorOutput.swift in Sources */,
+				6B70B76821EC5F22005A9702 /* UserDefaultsServise.swift in Sources */,
 				C40860FF186FD33A4FBFD716 /* ExerciseInteractor.swift in Sources */,
 				236A36CC17F48F7F3A2DE391 /* ExerciseRouterInput.swift in Sources */,
 				1D6E3208F1D5F0FC3FD6CF51 /* ExerciseRouter.swift in Sources */,

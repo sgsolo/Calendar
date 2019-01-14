@@ -44,6 +44,7 @@ let addTrainingAssembly = DependencyContainer { container in
         .resolvingProperties { container, item in
 	        let interactor = item as! AddTrainingInteractor
             interactor.output = try! container.resolve()
+            interactor.userDefaultsServise = UserDefaultsServiseImp()
     }
     
     container.register(.shared) { AddTrainingRouter() as AddTrainingRouterInput }

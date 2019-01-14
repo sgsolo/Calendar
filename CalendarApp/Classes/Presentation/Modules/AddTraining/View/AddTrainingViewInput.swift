@@ -8,4 +8,5 @@
 
 protocol AddTrainingViewInput: class {
 
+    func updateData()
 }
